@@ -1,0 +1,160 @@
+================================================
+  Ricart-Agrawala Mutual Exclusion Experiment
+================================================
+Number of Nodes: 2
+CS per Node: 5
+Expected Messages per CS: 2(2-1) = 2
+
+Starting 2 nodes...
+
+Started Node 1
+Started Node 2
+[Node1] Listening on port 10001
+[Node2] Listening on port 10002
+[Node1] Connecting to peers...
+[Node1] Connected to 1 peers
+[Node2] Connecting to peers...
+[Node2] Connected to 1 peers
+
+Signaling experiment start to all nodes...
+
+Waiting for all nodes to complete...
+
+[Node1] Experiment started
+[Node1] Requesting CS #1 with timestamp 1
+[Node2] Experiment started
+[Node1 -> Node2] REQUEST(ts=1)
+[Node2 <- Node1] REQUEST(ts=1)
+[Node2] Requesting CS #1 with timestamp 1
+[Node2 -> Node1] REPLY (immediate)
+[Node2 -> Node1] REQUEST(ts=1)
+[Node1 <- Node2] REPLY
+[Node1 <- Node2] REQUEST(ts=1)
+[Node1] Received all 1 replies
+[Node1] Deferring REPLY to Node2
+[Node1] === CRITICAL SECTION #1 START ===
+[Node1] === CRITICAL SECTION #1 END ===
+[Node2 <- Node1] REPLY
+[Node2] Received all 1 replies
+[Node2] === CRITICAL SECTION #1 START ===
+[Node1 -> Node2] REPLY (deferred)
+[Node1] Completed CS 1/5
+[Node1] Requesting CS #2 with timestamp 5
+[Node1 -> Node2] REQUEST(ts=5)
+[Node2 <- Node1] REQUEST(ts=5)
+[Node2] Deferring REPLY to Node1
+[Node2] === CRITICAL SECTION #1 END ===
+[Node1 <- Node2] REPLY
+[Node1] Received all 1 replies
+[Node1] === CRITICAL SECTION #2 START ===
+[Node2 -> Node1] REPLY (deferred)
+[Node2] Completed CS 1/5
+[Node2] Requesting CS #2 with timestamp 7
+[Node2 -> Node1] REQUEST(ts=7)
+[Node1 <- Node2] REQUEST(ts=7)
+[Node1] Deferring REPLY to Node2
+[Node1] === CRITICAL SECTION #2 END ===
+[Node1 -> Node2] REPLY (deferred)
+[Node1] Completed CS 2/5
+[Node2 <- Node1] REPLY
+[Node2] Received all 1 replies
+[Node2] === CRITICAL SECTION #2 START ===
+[Node1] Requesting CS #3 with timestamp 9
+[Node1 -> Node2] REQUEST(ts=9)
+[Node2 <- Node1] REQUEST(ts=9)
+[Node2] Deferring REPLY to Node1
+[Node2] === CRITICAL SECTION #2 END ===
+[Node2 -> Node1] REPLY (deferred)
+[Node2] Completed CS 2/5
+[Node1 <- Node2] REPLY
+[Node1] Received all 1 replies
+[Node1] === CRITICAL SECTION #3 START ===
+[Node2] Requesting CS #3 with timestamp 11
+[Node2 -> Node1] REQUEST(ts=11)
+[Node1 <- Node2] REQUEST(ts=11)
+[Node1] Deferring REPLY to Node2
+[Node1] === CRITICAL SECTION #3 END ===
+[Node1 -> Node2] REPLY (deferred)
+[Node1] Completed CS 3/5
+[Node2 <- Node1] REPLY
+[Node2] Received all 1 replies
+[Node2] === CRITICAL SECTION #3 START ===
+[Node1] Requesting CS #4 with timestamp 13
+[Node1 -> Node2] REQUEST(ts=13)
+[Node2 <- Node1] REQUEST(ts=13)
+[Node2] Deferring REPLY to Node1
+[Node2] === CRITICAL SECTION #3 END ===
+[Node2 -> Node1] REPLY (deferred)
+[Node2] Completed CS 3/5
+[Node1 <- Node2] REPLY
+[Node1] Received all 1 replies
+[Node1] === CRITICAL SECTION #4 START ===
+[Node2] Requesting CS #4 with timestamp 15
+[Node2 -> Node1] REQUEST(ts=15)
+[Node1 <- Node2] REQUEST(ts=15)
+[Node1] Deferring REPLY to Node2
+[Node1] === CRITICAL SECTION #4 END ===
+[Node1 -> Node2] REPLY (deferred)
+[Node1] Completed CS 4/5
+[Node2 <- Node1] REPLY
+[Node2] Received all 1 replies
+[Node2] === CRITICAL SECTION #4 START ===
+[Node1] Requesting CS #5 with timestamp 17
+[Node1 -> Node2] REQUEST(ts=17)
+[Node2 <- Node1] REQUEST(ts=17)
+[Node2] Deferring REPLY to Node1
+[Node2] === CRITICAL SECTION #4 END ===
+[Node2 -> Node1] REPLY (deferred)
+[Node2] Completed CS 4/5
+[Node1 <- Node2] REPLY
+[Node1] Received all 1 replies
+[Node1] === CRITICAL SECTION #5 START ===
+[Node2] Requesting CS #5 with timestamp 19
+[Node2 -> Node1] REQUEST(ts=19)
+[Node1 <- Node2] REQUEST(ts=19)
+[Node1] Deferring REPLY to Node2
+[Node1] === CRITICAL SECTION #5 END ===
+[Node1 -> Node2] REPLY (deferred)
+[Node1] Completed CS 5/5
+[Node2 <- Node1] REPLY
+[Node2] Received all 1 replies
+[Node2] === CRITICAL SECTION #5 START ===
+
+[Node1] === EXPERIMENT COMPLETE ===
+[Node1] Requests Sent: 5
+[Node1] Requests Received: 5
+[Node1] Replies Sent: 5
+[Node1] Replies Received: 5
+[Node1] Total Messages: 20
+[Node2] === CRITICAL SECTION #5 END ===
+[Node2] Completed CS 5/5
+
+[Node2] === EXPERIMENT COMPLETE ===
+[Node2] Requests Sent: 5
+[Node2] Requests Received: 5
+[Node2] Replies Sent: 5
+[Node2] Replies Received: 5
+[Node2] Total Messages: 20
+All nodes completed!
+
+================================================
+   RICART-AGRAWALA MUTUAL EXCLUSION RESULTS
+================================================
+Number of Nodes: 2
+CS per Node: 5
+Total CS Executions: 10
+------------------------------------------------
+REQUEST Messages Sent: 10
+REQUEST Messages Received: 10
+REPLY Messages Sent: 10
+REPLY Messages Received: 10
+------------------------------------------------
+Total Messages Sent: 20
+Theoretical Messages per CS: 2 [2(N-1)]
+Actual Avg Messages per CS: 2.00
+------------------------------------------------
+Total Time: 3033 ms
+Avg Latency per CS: 142.50 ms
+================================================
+
+CSV_OUTPUT,2,20,2.00,142.50,2

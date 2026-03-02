@@ -1,0 +1,2532 @@
+=== Token-Based Ring Mutual Exclusion ===
+Number of Nodes: 2
+CS per Node: 5
+
+Starting 2 nodes in ring configuration...
+Started Node 1 (port 9001 -> 9002)
+Started Node 2 (port 9002 -> 9001)
+[Node1] Listening on port 9001
+[Node2] Listening on port 9002
+[Node1] Connected to next node on port 9002
+[Node2] Connected to next node on port 9001
+
+Signaling experiment start to all nodes...
+
+Waiting for all nodes to complete...
+
+[Node1] Experiment started
+[Node1] I have the initial token
+[Node1] === CRITICAL SECTION START ===
+[Node2] Experiment started
+[Node1] === CRITICAL SECTION END ===
+[Node1] Completed CS 1/5
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+[Node2] === CRITICAL SECTION START ===
+[Node2] === CRITICAL SECTION END ===
+[Node2] Completed CS 1/5
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+[Node1] === CRITICAL SECTION START ===
+[Node1] === CRITICAL SECTION END ===
+[Node1] Completed CS 2/5
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+[Node2] === CRITICAL SECTION START ===
+[Node2] === CRITICAL SECTION END ===
+[Node2] Completed CS 2/5
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+[Node1] === CRITICAL SECTION START ===
+[Node1] === CRITICAL SECTION END ===
+[Node1] Completed CS 3/5
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+[Node2] === CRITICAL SECTION START ===
+[Node2] === CRITICAL SECTION END ===
+[Node2] Completed CS 3/5
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+[Node1] === CRITICAL SECTION START ===
+[Node1] === CRITICAL SECTION END ===
+[Node1] Completed CS 4/5
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+[Node2] === CRITICAL SECTION START ===
+[Node2] === CRITICAL SECTION END ===
+[Node2] Completed CS 4/5
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+[Node1] === CRITICAL SECTION START ===
+[Node1] === CRITICAL SECTION END ===
+[Node1] Completed CS 5/5
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 4
+[Node1] Messages Received: 4
+[Node1] Token Passes: 4
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+[Node2] === CRITICAL SECTION START ===
+[Node2] === CRITICAL SECTION END ===
+[Node2] Completed CS 5/5
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 4
+[Node2] Messages Received: 5
+[Node2] Token Passes: 4
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 5
+[Node1] Messages Received: 5
+[Node1] Token Passes: 5
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 5
+[Node2] Messages Received: 6
+[Node2] Token Passes: 5
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 6
+[Node1] Messages Received: 6
+[Node1] Token Passes: 6
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 6
+[Node2] Messages Received: 7
+[Node2] Token Passes: 6
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 7
+[Node1] Messages Received: 7
+[Node1] Token Passes: 7
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 7
+[Node2] Messages Received: 8
+[Node2] Token Passes: 7
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 8
+[Node1] Messages Received: 8
+[Node1] Token Passes: 8
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 8
+[Node2] Messages Received: 9
+[Node2] Token Passes: 8
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 9
+[Node1] Messages Received: 9
+[Node1] Token Passes: 9
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 9
+[Node2] Messages Received: 10
+[Node2] Token Passes: 9
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 10
+[Node1] Messages Received: 10
+[Node1] Token Passes: 10
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 10
+[Node2] Messages Received: 11
+[Node2] Token Passes: 10
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 11
+[Node1] Messages Received: 11
+[Node1] Token Passes: 11
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 11
+[Node2] Messages Received: 12
+[Node2] Token Passes: 11
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 12
+[Node1] Messages Received: 12
+[Node1] Token Passes: 12
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 12
+[Node2] Messages Received: 13
+[Node2] Token Passes: 12
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 13
+[Node1] Messages Received: 13
+[Node1] Token Passes: 13
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 13
+[Node2] Messages Received: 14
+[Node2] Token Passes: 13
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 14
+[Node1] Messages Received: 14
+[Node1] Token Passes: 14
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 14
+[Node2] Messages Received: 15
+[Node2] Token Passes: 14
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 15
+[Node1] Messages Received: 15
+[Node1] Token Passes: 15
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 15
+[Node2] Messages Received: 16
+[Node2] Token Passes: 15
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 16
+[Node1] Messages Received: 16
+[Node1] Token Passes: 16
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 16
+[Node2] Messages Received: 17
+[Node2] Token Passes: 16
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 17
+[Node1] Messages Received: 17
+[Node1] Token Passes: 17
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 17
+[Node2] Messages Received: 18
+[Node2] Token Passes: 17
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 18
+[Node1] Messages Received: 18
+[Node1] Token Passes: 18
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 18
+[Node2] Messages Received: 19
+[Node2] Token Passes: 18
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 19
+[Node1] Messages Received: 19
+[Node1] Token Passes: 19
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 19
+[Node2] Messages Received: 20
+[Node2] Token Passes: 19
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 20
+[Node1] Messages Received: 20
+[Node1] Token Passes: 20
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 20
+[Node2] Messages Received: 21
+[Node2] Token Passes: 20
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 21
+[Node1] Messages Received: 21
+[Node1] Token Passes: 21
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 21
+[Node2] Messages Received: 22
+[Node2] Token Passes: 21
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 22
+[Node1] Messages Received: 22
+[Node1] Token Passes: 22
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 22
+[Node2] Messages Received: 23
+[Node2] Token Passes: 22
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 23
+[Node1] Messages Received: 23
+[Node1] Token Passes: 23
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 23
+[Node2] Messages Received: 24
+[Node2] Token Passes: 23
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 24
+[Node1] Messages Received: 24
+[Node1] Token Passes: 24
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 24
+[Node2] Messages Received: 25
+[Node2] Token Passes: 24
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 25
+[Node1] Messages Received: 25
+[Node1] Token Passes: 25
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 25
+[Node2] Messages Received: 26
+[Node2] Token Passes: 25
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 26
+[Node1] Messages Received: 26
+[Node1] Token Passes: 26
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 26
+[Node2] Messages Received: 27
+[Node2] Token Passes: 26
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 27
+[Node1] Messages Received: 27
+[Node1] Token Passes: 27
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 27
+[Node2] Messages Received: 28
+[Node2] Token Passes: 27
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 28
+[Node1] Messages Received: 28
+[Node1] Token Passes: 28
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 28
+[Node2] Messages Received: 29
+[Node2] Token Passes: 28
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 29
+[Node1] Messages Received: 29
+[Node1] Token Passes: 29
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 29
+[Node2] Messages Received: 30
+[Node2] Token Passes: 29
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 30
+[Node1] Messages Received: 30
+[Node1] Token Passes: 30
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 30
+[Node2] Messages Received: 31
+[Node2] Token Passes: 30
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 31
+[Node1] Messages Received: 31
+[Node1] Token Passes: 31
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 31
+[Node2] Messages Received: 32
+[Node2] Token Passes: 31
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 32
+[Node1] Messages Received: 32
+[Node1] Token Passes: 32
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 32
+[Node2] Messages Received: 33
+[Node2] Token Passes: 32
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 33
+[Node1] Messages Received: 33
+[Node1] Token Passes: 33
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 33
+[Node2] Messages Received: 34
+[Node2] Token Passes: 33
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 34
+[Node1] Messages Received: 34
+[Node1] Token Passes: 34
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 34
+[Node2] Messages Received: 35
+[Node2] Token Passes: 34
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 35
+[Node1] Messages Received: 35
+[Node1] Token Passes: 35
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 35
+[Node2] Messages Received: 36
+[Node2] Token Passes: 35
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 36
+[Node1] Messages Received: 36
+[Node1] Token Passes: 36
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 36
+[Node2] Messages Received: 37
+[Node2] Token Passes: 36
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 37
+[Node1] Messages Received: 37
+[Node1] Token Passes: 37
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 37
+[Node2] Messages Received: 38
+[Node2] Token Passes: 37
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 38
+[Node1] Messages Received: 38
+[Node1] Token Passes: 38
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 38
+[Node2] Messages Received: 39
+[Node2] Token Passes: 38
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 39
+[Node1] Messages Received: 39
+[Node1] Token Passes: 39
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 39
+[Node2] Messages Received: 40
+[Node2] Token Passes: 39
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 40
+[Node1] Messages Received: 40
+[Node1] Token Passes: 40
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 40
+[Node2] Messages Received: 41
+[Node2] Token Passes: 40
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 41
+[Node1] Messages Received: 41
+[Node1] Token Passes: 41
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 41
+[Node2] Messages Received: 42
+[Node2] Token Passes: 41
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 42
+[Node1] Messages Received: 42
+[Node1] Token Passes: 42
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 42
+[Node2] Messages Received: 43
+[Node2] Token Passes: 42
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 43
+[Node1] Messages Received: 43
+[Node1] Token Passes: 43
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 43
+[Node2] Messages Received: 44
+[Node2] Token Passes: 43
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 44
+[Node1] Messages Received: 44
+[Node1] Token Passes: 44
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 44
+[Node2] Messages Received: 45
+[Node2] Token Passes: 44
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 45
+[Node1] Messages Received: 45
+[Node1] Token Passes: 45
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 45
+[Node2] Messages Received: 46
+[Node2] Token Passes: 45
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 46
+[Node1] Messages Received: 46
+[Node1] Token Passes: 46
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 46
+[Node2] Messages Received: 47
+[Node2] Token Passes: 46
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 47
+[Node1] Messages Received: 47
+[Node1] Token Passes: 47
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 47
+[Node2] Messages Received: 48
+[Node2] Token Passes: 47
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 48
+[Node1] Messages Received: 48
+[Node1] Token Passes: 48
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 48
+[Node2] Messages Received: 49
+[Node2] Token Passes: 48
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 49
+[Node1] Messages Received: 49
+[Node1] Token Passes: 49
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 49
+[Node2] Messages Received: 50
+[Node2] Token Passes: 49
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 50
+[Node1] Messages Received: 50
+[Node1] Token Passes: 50
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 50
+[Node2] Messages Received: 51
+[Node2] Token Passes: 50
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 51
+[Node1] Messages Received: 51
+[Node1] Token Passes: 51
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 51
+[Node2] Messages Received: 52
+[Node2] Token Passes: 51
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 52
+[Node1] Messages Received: 52
+[Node1] Token Passes: 52
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 52
+[Node2] Messages Received: 53
+[Node2] Token Passes: 52
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 53
+[Node1] Messages Received: 53
+[Node1] Token Passes: 53
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 53
+[Node2] Messages Received: 54
+[Node2] Token Passes: 53
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 54
+[Node1] Messages Received: 54
+[Node1] Token Passes: 54
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 54
+[Node2] Messages Received: 55
+[Node2] Token Passes: 54
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 55
+[Node1] Messages Received: 55
+[Node1] Token Passes: 55
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 55
+[Node2] Messages Received: 56
+[Node2] Token Passes: 55
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 56
+[Node1] Messages Received: 56
+[Node1] Token Passes: 56
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 56
+[Node2] Messages Received: 57
+[Node2] Token Passes: 56
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 57
+[Node1] Messages Received: 57
+[Node1] Token Passes: 57
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 57
+[Node2] Messages Received: 58
+[Node2] Token Passes: 57
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 58
+[Node1] Messages Received: 58
+[Node1] Token Passes: 58
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 58
+[Node2] Messages Received: 59
+[Node2] Token Passes: 58
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 59
+[Node1] Messages Received: 59
+[Node1] Token Passes: 59
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 59
+[Node2] Messages Received: 60
+[Node2] Token Passes: 59
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 60
+[Node1] Messages Received: 60
+[Node1] Token Passes: 60
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 60
+[Node2] Messages Received: 61
+[Node2] Token Passes: 60
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 61
+[Node1] Messages Received: 61
+[Node1] Token Passes: 61
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 61
+[Node2] Messages Received: 62
+[Node2] Token Passes: 61
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 62
+[Node1] Messages Received: 62
+[Node1] Token Passes: 62
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 62
+[Node2] Messages Received: 63
+[Node2] Token Passes: 62
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 63
+[Node1] Messages Received: 63
+[Node1] Token Passes: 63
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 63
+[Node2] Messages Received: 64
+[Node2] Token Passes: 63
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 64
+[Node1] Messages Received: 64
+[Node1] Token Passes: 64
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 64
+[Node2] Messages Received: 65
+[Node2] Token Passes: 64
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 65
+[Node1] Messages Received: 65
+[Node1] Token Passes: 65
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 65
+[Node2] Messages Received: 66
+[Node2] Token Passes: 65
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 66
+[Node1] Messages Received: 66
+[Node1] Token Passes: 66
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 66
+[Node2] Messages Received: 67
+[Node2] Token Passes: 66
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 67
+[Node1] Messages Received: 67
+[Node1] Token Passes: 67
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 67
+[Node2] Messages Received: 68
+[Node2] Token Passes: 67
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 68
+[Node1] Messages Received: 68
+[Node1] Token Passes: 68
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 68
+[Node2] Messages Received: 69
+[Node2] Token Passes: 68
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 69
+[Node1] Messages Received: 69
+[Node1] Token Passes: 69
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 69
+[Node2] Messages Received: 70
+[Node2] Token Passes: 69
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 70
+[Node1] Messages Received: 70
+[Node1] Token Passes: 70
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 70
+[Node2] Messages Received: 71
+[Node2] Token Passes: 70
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 71
+[Node1] Messages Received: 71
+[Node1] Token Passes: 71
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 71
+[Node2] Messages Received: 72
+[Node2] Token Passes: 71
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 72
+[Node1] Messages Received: 72
+[Node1] Token Passes: 72
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 72
+[Node2] Messages Received: 73
+[Node2] Token Passes: 72
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 73
+[Node1] Messages Received: 73
+[Node1] Token Passes: 73
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 73
+[Node2] Messages Received: 74
+[Node2] Token Passes: 73
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 74
+[Node1] Messages Received: 74
+[Node1] Token Passes: 74
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 74
+[Node2] Messages Received: 75
+[Node2] Token Passes: 74
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 75
+[Node1] Messages Received: 75
+[Node1] Token Passes: 75
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 75
+[Node2] Messages Received: 76
+[Node2] Token Passes: 75
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 76
+[Node1] Messages Received: 76
+[Node1] Token Passes: 76
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 76
+[Node2] Messages Received: 77
+[Node2] Token Passes: 76
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 77
+[Node1] Messages Received: 77
+[Node1] Token Passes: 77
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 77
+[Node2] Messages Received: 78
+[Node2] Token Passes: 77
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 78
+[Node1] Messages Received: 78
+[Node1] Token Passes: 78
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 78
+[Node2] Messages Received: 79
+[Node2] Token Passes: 78
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 79
+[Node1] Messages Received: 79
+[Node1] Token Passes: 79
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 79
+[Node2] Messages Received: 80
+[Node2] Token Passes: 79
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 80
+[Node1] Messages Received: 80
+[Node1] Token Passes: 80
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 80
+[Node2] Messages Received: 81
+[Node2] Token Passes: 80
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 81
+[Node1] Messages Received: 81
+[Node1] Token Passes: 81
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 81
+[Node2] Messages Received: 82
+[Node2] Token Passes: 81
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 82
+[Node1] Messages Received: 82
+[Node1] Token Passes: 82
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 82
+[Node2] Messages Received: 83
+[Node2] Token Passes: 82
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 83
+[Node1] Messages Received: 83
+[Node1] Token Passes: 83
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 83
+[Node2] Messages Received: 84
+[Node2] Token Passes: 83
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 84
+[Node1] Messages Received: 84
+[Node1] Token Passes: 84
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 84
+[Node2] Messages Received: 85
+[Node2] Token Passes: 84
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 85
+[Node1] Messages Received: 85
+[Node1] Token Passes: 85
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 85
+[Node2] Messages Received: 86
+[Node2] Token Passes: 85
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 86
+[Node1] Messages Received: 86
+[Node1] Token Passes: 86
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 86
+[Node2] Messages Received: 87
+[Node2] Token Passes: 86
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 87
+[Node1] Messages Received: 87
+[Node1] Token Passes: 87
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 87
+[Node2] Messages Received: 88
+[Node2] Token Passes: 87
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 88
+[Node1] Messages Received: 88
+[Node1] Token Passes: 88
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 88
+[Node2] Messages Received: 89
+[Node2] Token Passes: 88
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 89
+[Node1] Messages Received: 89
+[Node1] Token Passes: 89
+[Node1] Avg Latency: 87 ms
+[Node2] Received TOKEN
+[Node1] Passed TOKEN to next node
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 89
+[Node2] Messages Received: 90
+[Node2] Token Passes: 89
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 90
+[Node1] Messages Received: 90
+[Node1] Token Passes: 90
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 90
+[Node2] Messages Received: 91
+[Node2] Token Passes: 90
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 91
+[Node1] Messages Received: 91
+[Node1] Token Passes: 91
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 91
+[Node2] Messages Received: 92
+[Node2] Token Passes: 91
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 92
+[Node1] Messages Received: 92
+[Node1] Token Passes: 92
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 92
+[Node2] Messages Received: 93
+[Node2] Token Passes: 92
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 93
+[Node1] Messages Received: 93
+[Node1] Token Passes: 93
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 93
+[Node2] Messages Received: 94
+[Node2] Token Passes: 93
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 94
+[Node1] Messages Received: 94
+[Node1] Token Passes: 94
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 94
+[Node2] Messages Received: 95
+[Node2] Token Passes: 94
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 95
+[Node1] Messages Received: 95
+[Node1] Token Passes: 95
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 95
+[Node2] Messages Received: 96
+[Node2] Token Passes: 95
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 96
+[Node1] Messages Received: 96
+[Node1] Token Passes: 96
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 96
+[Node2] Messages Received: 97
+[Node2] Token Passes: 96
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 97
+[Node1] Messages Received: 97
+[Node1] Token Passes: 97
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 97
+[Node2] Messages Received: 98
+[Node2] Token Passes: 97
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 98
+[Node1] Messages Received: 98
+[Node1] Token Passes: 98
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 98
+[Node2] Messages Received: 99
+[Node2] Token Passes: 98
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 99
+[Node1] Messages Received: 99
+[Node1] Token Passes: 99
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 99
+[Node2] Messages Received: 100
+[Node2] Token Passes: 99
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 100
+[Node1] Messages Received: 100
+[Node1] Token Passes: 100
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 100
+[Node2] Messages Received: 101
+[Node2] Token Passes: 100
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 101
+[Node1] Messages Received: 101
+[Node1] Token Passes: 101
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 101
+[Node2] Messages Received: 102
+[Node2] Token Passes: 101
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+========================================
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 102
+[Node1] Messages Received: 102
+[Node1] Token Passes: 102
+   TOKEN-BASED RING MUTUAL EXCLUSION RESULTS
+[Node1] Avg Latency: 87 ms
+========================================
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+Number of Nodes: 2
+CS per Node: 5
+Total CS Executions: 10
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 102
+----------------------------------------
+[Node2] Messages Received: 103
+[Node2] Token Passes: 102
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+Messages Sent: 202
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 103
+Messages Received: 203
+[Node1] Messages Received: 103
+[Node1] Token Passes: 103
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+Total Messages: 405
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 103
+[Node2] Messages Received: 104
+[Node2] Token Passes: 103
+[Node2] Avg Latency: 91 ms
+Total Token Passes: 202
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 104
+[Node1] Messages Received: 104
+[Node1] Token Passes: 104
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 104
+[Node2] Messages Received: 105
+[Node2] Token Passes: 104
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 105
+[Node1] Messages Received: 105
+[Node1] Token Passes: 105
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 105
+[Node2] Messages Received: 106
+[Node2] Token Passes: 105
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 106
+[Node1] Messages Received: 106
+[Node1] Token Passes: 106
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 106
+[Node2] Messages Received: 107
+[Node2] Token Passes: 106
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 107
+[Node1] Messages Received: 107
+[Node1] Token Passes: 107
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 107
+[Node2] Messages Received: 108
+[Node2] Token Passes: 107
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 108
+[Node1] Messages Received: 108
+[Node1] Token Passes: 108
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 108
+[Node2] Messages Received: 109
+[Node2] Token Passes: 108
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 109
+[Node1] Messages Received: 109
+[Node1] Token Passes: 109
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 109
+[Node2] Messages Received: 110
+[Node2] Token Passes: 109
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 110
+[Node1] Messages Received: 110
+[Node1] Token Passes: 110
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 110
+[Node2] Messages Received: 111
+[Node2] Token Passes: 110
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 111
+[Node1] Messages Received: 111
+[Node1] Token Passes: 111
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 111
+[Node2] Messages Received: 112
+[Node2] Token Passes: 111
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 112
+[Node1] Messages Received: 112
+[Node1] Token Passes: 112
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 112
+[Node2] Messages Received: 113
+[Node2] Token Passes: 112
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 113
+[Node1] Messages Received: 113
+[Node1] Token Passes: 113
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 113
+[Node2] Messages Received: 114
+[Node2] Token Passes: 113
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 114
+[Node1] Messages Received: 114
+[Node1] Token Passes: 114
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 114
+[Node2] Messages Received: 115
+[Node2] Token Passes: 114
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 115
+[Node1] Messages Received: 115
+[Node1] Token Passes: 115
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 115
+[Node2] Messages Received: 116
+[Node2] Token Passes: 115
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 116
+[Node1] Messages Received: 116
+[Node1] Token Passes: 116
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 116
+[Node2] Messages Received: 117
+[Node2] Token Passes: 116
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 117
+[Node1] Messages Received: 117
+[Node1] Token Passes: 117
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 117
+[Node2] Messages Received: 118
+[Node2] Token Passes: 117
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 118
+[Node1] Messages Received: 118
+[Node1] Token Passes: 118
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 118
+[Node2] Messages Received: 119
+[Node2] Token Passes: 118
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 119
+[Node1] Messages Received: 119
+[Node1] Token Passes: 119
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 119
+[Node2] Messages Received: 120
+[Node2] Token Passes: 119
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 120
+[Node1] Messages Received: 120
+[Node1] Token Passes: 120
+[Node1] Avg Latency: 87 ms
+[Node2] Received TOKEN
+[Node1] Passed TOKEN to next node
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 120
+[Node2] Messages Received: 121
+[Node2] Token Passes: 120
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 121
+[Node1] Messages Received: 121
+[Node1] Token Passes: 121
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 121
+[Node2] Messages Received: 122
+[Node2] Token Passes: 121
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 122
+[Node1] Messages Received: 122
+[Node1] Token Passes: 122
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 122
+[Node2] Messages Received: 123
+[Node2] Token Passes: 122
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 123
+[Node1] Messages Received: 123
+[Node1] Token Passes: 123
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 123
+[Node2] Messages Received: 124
+[Node2] Token Passes: 123
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 124
+[Node1] Messages Received: 124
+[Node1] Token Passes: 124
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 124
+[Node2] Messages Received: 125
+[Node2] Token Passes: 124
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 125
+[Node1] Messages Received: 125
+[Node1] Token Passes: 125
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 125
+[Node2] Messages Received: 126
+[Node2] Token Passes: 125
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 126
+[Node1] Messages Received: 126
+[Node1] Token Passes: 126
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 126
+[Node2] Messages Received: 127
+[Node2] Token Passes: 126
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 127
+[Node1] Messages Received: 127
+[Node1] Token Passes: 127
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 127
+[Node2] Messages Received: 128
+[Node2] Token Passes: 127
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 128
+[Node1] Messages Received: 128
+[Node1] Token Passes: 128
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 128
+[Node2] Messages Received: 129
+[Node2] Token Passes: 128
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 129
+[Node1] Messages Received: 129
+[Node1] Token Passes: 129
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 129
+[Node2] Messages Received: 130
+[Node2] Token Passes: 129
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 130
+[Node1] Messages Received: 130
+[Node1] Token Passes: 130
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 130
+[Node2] Messages Received: 131
+[Node2] Token Passes: 130
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 131
+[Node1] Messages Received: 131
+[Node1] Token Passes: 131
+Avg Messages per CS: 40.50
+[Node1] Avg Latency: 87 ms
+----------------------------------------
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 131
+[Node2] Messages Received: 132
+[Node2] Token Passes: 131
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 132
+[Node1] Messages Received: 132
+[Node1] Token Passes: 132
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 132
+[Node2] Messages Received: 133
+[Node2] Token Passes: 132
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 133
+[Node1] Messages Received: 133
+[Node1] Token Passes: 133
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 133
+[Node2] Messages Received: 134
+[Node2] Token Passes: 133
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 134
+[Node1] Messages Received: 134
+[Node1] Token Passes: 134
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 134
+[Node2] Messages Received: 135
+[Node2] Token Passes: 134
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 135
+[Node1] Messages Received: 135
+[Node1] Token Passes: 135
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 135
+[Node2] Messages Received: 136
+[Node2] Token Passes: 135
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 136
+[Node1] Messages Received: 136
+[Node1] Token Passes: 136
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+Total Time: 2451 ms
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 136
+[Node2] Messages Received: 137
+[Node2] Token Passes: 136
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 137
+[Node1] Messages Received: 137
+[Node1] Token Passes: 137
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 137
+[Node2] Messages Received: 138
+[Node2] Token Passes: 137
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 138
+[Node1] Messages Received: 138
+[Node1] Token Passes: 138
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 138
+[Node2] Messages Received: 139
+[Node2] Token Passes: 138
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 139
+[Node1] Messages Received: 139
+[Node1] Token Passes: 139
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 139
+[Node2] Messages Received: 140
+[Node2] Token Passes: 139
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 140
+[Node1] Messages Received: 140
+[Node1] Token Passes: 140
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 140
+[Node2] Messages Received: 141
+[Node2] Token Passes: 140
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 141
+[Node1] Messages Received: 141
+[Node1] Token Passes: 141
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 141
+[Node2] Messages Received: 142
+[Node2] Token Passes: 141
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 142
+[Node1] Messages Received: 142
+[Node1] Token Passes: 142
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 142
+[Node2] Messages Received: 143
+[Node2] Token Passes: 142
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 143
+[Node1] Messages Received: 143
+[Node1] Token Passes: 143
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+Avg Latency per CS: 89.00 ms
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 143
+[Node2] Messages Received: 144
+[Node2] Token Passes: 143
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+========================================
+
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 144
+[Node1] Messages Received: 144
+[Node1] Token Passes: 144
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 144
+[Node2] Messages Received: 145
+[Node2] Token Passes: 144
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 145
+[Node1] Messages Received: 145
+[Node1] Token Passes: 145
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 145
+[Node2] Messages Received: 146
+[Node2] Token Passes: 145
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 146
+[Node1] Messages Received: 146
+[Node1] Token Passes: 146
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 146
+[Node2] Messages Received: 147
+[Node2] Token Passes: 146
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 147
+[Node1] Messages Received: 147
+[Node1] Token Passes: 147
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 147
+[Node2] Messages Received: 148
+[Node2] Token Passes: 147
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 148
+[Node1] Messages Received: 148
+[Node1] Token Passes: 148
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 148
+[Node2] Messages Received: 149
+[Node2] Token Passes: 148
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 149
+[Node1] Messages Received: 149
+[Node1] Token Passes: 149
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 149
+[Node2] Messages Received: 150
+[Node2] Token Passes: 149
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 150
+[Node1] Messages Received: 150
+[Node1] Token Passes: 150
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 150
+[Node2] Messages Received: 151
+[Node2] Token Passes: 150
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 151
+[Node1] Messages Received: 151
+[Node1] Token Passes: 151
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 151
+[Node2] Messages Received: 152
+[Node2] Token Passes: 151
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 152
+[Node1] Messages Received: 152
+[Node1] Token Passes: 152
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 152
+[Node2] Messages Received: 153
+[Node2] Token Passes: 152
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 153
+[Node1] Messages Received: 153
+[Node1] Token Passes: 153
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 153
+[Node2] Messages Received: 154
+[Node2] Token Passes: 153
+[Node2] Avg Latency: 91 ms
+[Node1] Received TOKEN
+[Node2] Passed TOKEN to next node
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 154
+[Node1] Messages Received: 154
+[Node1] Token Passes: 154
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 154
+[Node2] Messages Received: 155
+[Node2] Token Passes: 154
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 155
+[Node1] Messages Received: 155
+[Node1] Token Passes: 155
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 155
+[Node2] Messages Received: 156
+[Node2] Token Passes: 155
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN
+
+[Node1] === COMPLETED ===
+[Node1] Messages Sent: 156
+[Node1] Messages Received: 156
+[Node1] Token Passes: 156
+[Node1] Avg Latency: 87 ms
+[Node1] Passed TOKEN to next node
+CSV_OUTPUT,2,405,40.50,89.00
+[Node2] Received TOKEN
+
+[Node2] === COMPLETED ===
+[Node2] Messages Sent: 156
+[Node2] Messages Received: 157
+[Node2] Token Passes: 156
+[Node2] Avg Latency: 91 ms
+[Node2] Passed TOKEN to next node
+[Node1] Received TOKEN

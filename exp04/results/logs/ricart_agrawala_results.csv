@@ -1,0 +1,6 @@
+Nodes,TotalMessages,AvgMessagesPerCS,AvgLatency,TheoreticalPerCS
+2,20,2.00,142.50,2
+3,60,4.00,223.67,4
+5,200,8.00,364.80,8
+8,560,14.00,572.63,14
+10,900,18.00,769.80,18

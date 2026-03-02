@@ -1,0 +1,308 @@
+=== Centralized Mutual Exclusion Server ===
+Waiting for 8 clients...
+Each client will execute 5 critical sections
+Client 1 connected from port 49697
+Client 2 connected from port 49698
+Client 3 connected from port 49699
+Client 4 connected from port 49700
+Client 5 connected from port 49701
+Client 6 connected from port 49702
+Client 7 connected from port 49703
+Client 8 connected from port 49704
+
+All clients connected. Starting experiment...
+
+[Client2 -> Server] REQUEST
+[Client3 -> Server] REQUEST
+[Client1 -> Server] REQUEST
+[Server -> Client2] GRANT
+[Client6 -> Server] REQUEST
+[Client7 -> Server] REQUEST
+[Client8 -> Server] REQUEST
+[Client5 -> Server] REQUEST
+[Client4 -> Server] REQUEST
+[Client2 -> Server] RELEASE
+[Server -> Client6] GRANT
+[Client2 -> Server] REQUEST
+[Client6 -> Server] RELEASE
+[Server -> Client7] GRANT
+[Client6 -> Server] REQUEST
+[Client7 -> Server] RELEASE
+[Server -> Client1] GRANT
+[Client7 -> Server] REQUEST
+[Client1 -> Server] RELEASE
+[Server -> Client3] GRANT
+[Client1 -> Server] REQUEST
+[Client3 -> Server] RELEASE
+[Server -> Client8] GRANT
+[Client3 -> Server] REQUEST
+[Client8 -> Server] RELEASE
+[Server -> Client5] GRANT
+[Client8 -> Server] REQUEST
+[Client5 -> Server] RELEASE
+[Server -> Client4] GRANT
+[Client5 -> Server] REQUEST
+[Client4 -> Server] RELEASE
+[Server -> Client2] GRANT
+[Client4 -> Server] REQUEST
+[Client2 -> Server] RELEASE
+[Server -> Client6] GRANT
+[Client2 -> Server] REQUEST
+[Client6 -> Server] RELEASE
+[Server -> Client7] GRANT
+[Client6 -> Server] REQUEST
+[Client7 -> Server] RELEASE
+[Server -> Client1] GRANT
+[Client7 -> Server] REQUEST
+[Client1 -> Server] RELEASE
+[Server -> Client3] GRANT
+[Client1 -> Server] REQUEST
+[Client3 -> Server] RELEASE
+[Server -> Client8] GRANT
+[Client3 -> Server] REQUEST
+[Client8 -> Server] RELEASE
+[Server -> Client5] GRANT
+[Client8 -> Server] REQUEST
+[Client5 -> Server] RELEASE
+[Server -> Client4] GRANT
+[Client5 -> Server] REQUEST
+[Client4 -> Server] RELEASE
+[Server -> Client2] GRANT
+[Client4 -> Server] REQUEST
+[Client2 -> Server] RELEASE
+[Server -> Client6] GRANT
+[Client2 -> Server] REQUEST
+[Client6 -> Server] RELEASE
+[Server -> Client7] GRANT
+[Client6 -> Server] REQUEST
+[Client7 -> Server] RELEASE
+[Server -> Client1] GRANT
+[Client7 -> Server] REQUEST
+[Client1 -> Server] RELEASE
+[Server -> Client3] GRANT
+[Client1 -> Server] REQUEST
+[Client3 -> Server] RELEASE
+[Server -> Client8] GRANT
+[Client3 -> Server] REQUEST
+[Client8 -> Server] RELEASE
+[Server -> Client5] GRANT
+[Client8 -> Server] REQUEST
+[Client5 -> Server] RELEASE
+[Server -> Client4] GRANT
+[Client5 -> Server] REQUEST
+[Client4 -> Server] RELEASE
+[Server -> Client2] GRANT
+[Client4 -> Server] REQUEST
+[Client2 -> Server] RELEASE
+[Server -> Client6] GRANT
+[Client2 -> Server] REQUEST
+[Client6 -> Server] RELEASE
+[Server -> Client7] GRANT
+[Client6 -> Server] REQUEST
+[Client7 -> Server] RELEASE
+[Server -> Client1] GRANT
+[Client7 -> Server] REQUEST
+[Client1 -> Server] RELEASE
+[Server -> Client3] GRANT
+[Client1 -> Server] REQUEST
+[Client3 -> Server] RELEASE
+[Server -> Client8] GRANT
+[Client3 -> Server] REQUEST
+[Client8 -> Server] RELEASE
+[Server -> Client5] GRANT
+[Client8 -> Server] REQUEST
+[Client5 -> Server] RELEASE
+[Server -> Client4] GRANT
+[Client5 -> Server] REQUEST
+[Client4 -> Server] RELEASE
+[Server -> Client2] GRANT
+[Client4 -> Server] REQUEST
+[Client2 -> Server] RELEASE
+[Server -> Client6] GRANT
+[Client6 -> Server] RELEASE
+[Server -> Client7] GRANT
+[Client7 -> Server] RELEASE
+[Server -> Client1] GRANT
+[Client1 -> Server] RELEASE
+[Server -> Client3] GRANT
+[Client3 -> Server] RELEASE
+[Server -> Client8] GRANT
+[Client8 -> Server] RELEASE
+[Server -> Client5] GRANT
+[Client5 -> Server] RELEASE
+[Server -> Client4] GRANT
+[Client4 -> Server] RELEASE
+
+========================================
+   CENTRALIZED MUTUAL EXCLUSION RESULTS
+========================================
+Number of Clients: 8
+CS per Client: 5
+Total CS Executions: 40
+----------------------------------------
+Messages Received: 80
+Messages Sent: 56
+Total Messages: 136
+Avg Messages per CS: 3.40
+----------------------------------------
+Total Time: 3267 ms
+Avg Latency per CS: 81.68 ms
+========================================
+
+CSV_OUTPUT,8,136,3.40,81.68
+RT ===
+[Client3] === CRITICAL SECTION #2 END ===
+[Client3] Sent RELEASE after CS #2
+[Client3] Sent REQUEST for CS #3
+[Client4] Received GRANT, entering CS #3
+[Client4] === CRITICAL SECTION #3 START ===
+[Client4] === CRITICAL SECTION #3 END ===
+[Client4] Sent RELEASE after CS #3
+[Client4] Sent REQUEST for CS #4
+[Client7] Received GRANT, entering CS #3
+[Client7] === CRITICAL SECTION #3 START ===
+[Client7] === CRITICAL SECTION #3 END ===
+[Client7] Sent RELEASE after CS #3
+[Client7] Sent REQUEST for CS #4
+[Client5] Received GRANT, entering CS #3
+[Client5] === CRITICAL SECTION #3 START ===
+[Client5] === CRITICAL SECTION #3 END ===
+[Client5] Sent RELEASE after CS #3
+[Client5] Sent REQUEST for CS #4
+[Client2] Received GRANT, entering CS #3
+[Client2] === CRITICAL SECTION #3 START ===
+[Client2] === CRITICAL SECTION #3 END ===
+[Client2] Sent RELEASE after CS #3
+[Client2] Sent REQUEST for CS #4
+[Client1] Received GRANT, entering CS #3
+[Client1] === CRITICAL SECTION #3 START ===
+[Client1] === CRITICAL SECTION #3 END ===
+[Client1] Sent RELEASE after CS #3
+[Client1] Sent REQUEST for CS #4
+[Client8] Received GRANT, entering CS #3
+[Client8] === CRITICAL SECTION #3 START ===
+[Client8] === CRITICAL SECTION #3 END ===
+[Client8] Sent RELEASE after CS #3
+[Client8] Sent REQUEST for CS #4
+[Client6] Received GRANT, entering CS #3
+[Client6] === CRITICAL SECTION #3 START ===
+[Client6] === CRITICAL SECTION #3 END ===
+[Client6] Sent RELEASE after CS #3
+[Client6] Sent REQUEST for CS #4
+[Client3] Received GRANT, entering CS #3
+[Client3] === CRITICAL SECTION #3 START ===
+[Client3] === CRITICAL SECTION #3 END ===
+[Client3] Sent RELEASE after CS #3
+[Client3] Sent REQUEST for CS #4
+[Client4] Received GRANT, entering CS #4
+[Client4] === CRITICAL SECTION #4 START ===
+[Client4] === CRITICAL SECTION #4 END ===
+[Client4] Sent RELEASE after CS #4
+[Client4] Sent REQUEST for CS #5
+[Client7] Received GRANT, entering CS #4
+[Client7] === CRITICAL SECTION #4 START ===
+[Client7] === CRITICAL SECTION #4 END ===
+[Client7] Sent RELEASE after CS #4
+[Client7] Sent REQUEST for CS #5
+[Client5] Received GRANT, entering CS #4
+[Client5] === CRITICAL SECTION #4 START ===
+[Client5] === CRITICAL SECTION #4 END ===
+[Client5] Sent RELEASE after CS #4
+[Client5] Sent REQUEST for CS #5
+[Client2] Received GRANT, entering CS #4
+[Client2] === CRITICAL SECTION #4 START ===
+[Client2] === CRITICAL SECTION #4 END ===
+[Client2] Sent RELEASE after CS #4
+[Client2] Sent REQUEST for CS #5
+[Client1] Received GRANT, entering CS #4
+[Client1] === CRITICAL SECTION #4 START ===
+[Client1] === CRITICAL SECTION #4 END ===
+[Client1] Sent RELEASE after CS #4
+[Client1] Sent REQUEST for CS #5
+[Client8] Received GRANT, entering CS #4
+[Client8] === CRITICAL SECTION #4 START ===
+[Client8] === CRITICAL SECTION #4 END ===
+[Client8] Sent RELEASE after CS #4
+[Client8] Sent REQUEST for CS #5
+[Client6] Received GRANT, entering CS #4
+[Client6] === CRITICAL SECTION #4 START ===
+[Client6] === CRITICAL SECTION #4 END ===
+[Client6] Sent RELEASE after CS #4
+[Client6] Sent REQUEST for CS #5
+[Client3] Received GRANT, entering CS #4
+[Client3] === CRITICAL SECTION #4 START ===
+[Client3] === CRITICAL SECTION #4 END ===
+[Client3] Sent RELEASE after CS #4
+[Client3] Sent REQUEST for CS #5
+[Client4] Received GRANT, entering CS #5
+[Client4] === CRITICAL SECTION #5 START ===
+[Client4] === CRITICAL SECTION #5 END ===
+[Client4] Sent RELEASE after CS #5
+[Client7] Received GRANT, entering CS #5
+[Client7] === CRITICAL SECTION #5 START ===
+
+--- Client 4 Statistics ---
+Messages Sent: 10
+Messages Received: 7
+Total Messages: 17
+[Client7] === CRITICAL SECTION #5 END ===
+[Client7] Sent RELEASE after CS #5
+[Client5] Received GRANT, entering CS #5
+[Client5] === CRITICAL SECTION #5 START ===
+
+--- Client 7 Statistics ---
+Messages Sent: 10
+Messages Received: 7
+Total Messages: 17
+[Client5] === CRITICAL SECTION #5 END ===
+[Client5] Sent RELEASE after CS #5
+[Client2] Received GRANT, entering CS #5
+[Client2] === CRITICAL SECTION #5 START ===
+
+--- Client 5 Statistics ---
+Messages Sent: 10
+Messages Received: 7
+Total Messages: 17
+[Client2] === CRITICAL SECTION #5 END ===
+[Client2] Sent RELEASE after CS #5
+[Client1] Received GRANT, entering CS #5
+[Client1] === CRITICAL SECTION #5 START ===
+
+--- Client 2 Statistics ---
+Messages Sent: 10
+Messages Received: 7
+Total Messages: 17
+[Client1] === CRITICAL SECTION #5 END ===
+[Client1] Sent RELEASE after CS #5
+[Client8] Received GRANT, entering CS #5
+[Client8] === CRITICAL SECTION #5 START ===
+
+--- Client 1 Statistics ---
+Messages Sent: 10
+Messages Received: 7
+Total Messages: 17
+[Client8] === CRITICAL SECTION #5 END ===
+[Client8] Sent RELEASE after CS #5
+[Client6] Received GRANT, entering CS #5
+[Client6] === CRITICAL SECTION #5 START ===
+
+--- Client 8 Statistics ---
+Messages Sent: 10
+Messages Received: 7
+Total Messages: 17
+[Client6] === CRITICAL SECTION #5 END ===
+[Client6] Sent RELEASE after CS #5
+[Client3] Received GRANT, entering CS #5
+[Client3] === CRITICAL SECTION #5 START ===
+
+--- Client 6 Statistics ---
+Messages Sent: 10
+Messages Received: 7
+Total Messages: 17
+[Client3] === CRITICAL SECTION #5 END ===
+[Client3] Sent RELEASE after CS #5
+
+--- Client 3 Statistics ---
+Messages Sent: 10
+Messages Received: 7
+Total Messages: 17

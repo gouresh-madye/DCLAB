@@ -1,0 +1,124 @@
+=== Centralized Mutual Exclusion Server ===
+Waiting for 3 clients...
+Each client will execute 5 critical sections
+Client 1 connected from port 49517
+Client 2 connected from port 49518
+Client 3 connected from port 49519
+
+All clients connected. Starting experiment...
+
+[Client1 -> Server] REQUEST
+[Client3 -> Server] REQUEST
+[Client2 -> Server] REQUEST
+[Server -> Client1] GRANT
+[Client1 -> Server] RELEASE
+[Server -> Client2] GRANT
+[Client1 -> Server] REQUEST
+[Client2 -> Server] RELEASE
+[Server -> Client3] GRANT
+[Client2 -> Server] REQUEST
+[Client3 -> Server] RELEASE
+[Server -> Client1] GRANT
+[Client3 -> Server] REQUEST
+[Client1 -> Server] RELEASE
+[Server -> Client2] GRANT
+[Client1 -> Server] REQUEST
+[Client2 -> Server] RELEASE
+[Server -> Client3] GRANT
+[Client2 -> Server] REQUEST
+[Client3 -> Server] RELEASE
+[Server -> Client1] GRANT
+[Client3 -> Server] REQUEST
+[Client1 -> Server] RELEASE
+[Server -> Client2] GRANT
+[Client1 -> Server] REQUEST
+[Client2 -> Server] RELEASE
+[Server -> Client3] GRANT
+[Client2 -> Server] REQUEST
+[Client3 -> Server] RELEASE
+[Server -> Client1] GRANT
+[Client3 -> Server] REQUEST
+[Client1 -> Server] RELEASE
+[Server -> Client2] GRANT
+[Client1 -> Server] REQUEST
+[Client2 -> Server] RELEASE
+[Server -> Client3] GRANT
+[Client2 -> Server] REQUEST
+[Client3 -> Server] RELEASE
+[Server -> Client1] GRANT
+[Client3 -> Server] REQUEST
+[Client1 -> Server] RELEASE
+[Server -> Client2] GRANT
+[Client2 -> Server] RELEASE
+[Server -> Client3] GRANT
+[Client3 -> Server] RELEASE
+
+========================================
+   CENTRALIZED MUTUAL EXCLUSION RESULTS
+========================================
+Number of Clients: 3
+CS per Client: 5
+Total CS Executions: 15
+----------------------------------------
+Messages Received: 30
+Messages Sent: 21
+Total Messages: 51
+Avg Messages per CS: 3.40
+----------------------------------------
+Total Time: 1167 ms
+Avg Latency per CS: 77.80 ms
+========================================
+
+CSV_OUTPUT,3,51,3.40,77.80
+T, entering CS #3
+[Client1] === CRITICAL SECTION #3 START ===
+[Client1] === CRITICAL SECTION #3 END ===
+[Client1] Sent RELEASE after CS #3
+[Client1] Sent REQUEST for CS #4
+[Client2] Received GRANT, entering CS #3
+[Client2] === CRITICAL SECTION #3 START ===
+[Client2] === CRITICAL SECTION #3 END ===
+[Client2] Sent RELEASE after CS #3
+[Client2] Sent REQUEST for CS #4
+[Client3] Received GRANT, entering CS #4
+[Client3] === CRITICAL SECTION #4 START ===
+[Client3] === CRITICAL SECTION #4 END ===
+[Client3] Sent RELEASE after CS #4
+[Client3] Sent REQUEST for CS #5
+[Client1] Received GRANT, entering CS #4
+[Client1] === CRITICAL SECTION #4 START ===
+[Client1] === CRITICAL SECTION #4 END ===
+[Client1] Sent RELEASE after CS #4
+[Client1] Sent REQUEST for CS #5
+[Client2] Received GRANT, entering CS #4
+[Client2] === CRITICAL SECTION #4 START ===
+[Client2] === CRITICAL SECTION #4 END ===
+[Client2] Sent RELEASE after CS #4
+[Client2] Sent REQUEST for CS #5
+[Client3] Received GRANT, entering CS #5
+[Client3] === CRITICAL SECTION #5 START ===
+[Client3] === CRITICAL SECTION #5 END ===
+[Client3] Sent RELEASE after CS #5
+[Client1] Received GRANT, entering CS #5
+[Client1] === CRITICAL SECTION #5 START ===
+
+--- Client 3 Statistics ---
+Messages Sent: 10
+Messages Received: 7
+Total Messages: 17
+[Client1] === CRITICAL SECTION #5 END ===
+[Client1] Sent RELEASE after CS #5
+[Client2] Received GRANT, entering CS #5
+[Client2] === CRITICAL SECTION #5 START ===
+
+--- Client 1 Statistics ---
+Messages Sent: 10
+Messages Received: 7
+Total Messages: 17
+[Client2] === CRITICAL SECTION #5 END ===
+[Client2] Sent RELEASE after CS #5
+
+--- Client 2 Statistics ---
+Messages Sent: 10
+Messages Received: 7
+Total Messages: 17

@@ -1,0 +1,84 @@
+==============================================
+  NON-TOKEN BASED MUTUAL EXCLUSION EXPERIMENT
+  Centralized vs Ricart-Agrawala Comparison
+==============================================
+
+Compiling Centralized implementation...
+Compiling Ricart-Agrawala implementation...
+
+Starting experiments...
+
+==============================================
+Running experiments with 2 nodes
+==============================================
+
+--- Centralized Algorithm (2 nodes) ---
+Centralized (2 nodes): 2,34,3.40,78.20
+
+--- Ricart-Agrawala Algorithm (2 nodes) ---
+Ricart-Agrawala (2 nodes): 2,20,2.00,142.50,2
+
+==============================================
+Running experiments with 3 nodes
+==============================================
+
+--- Centralized Algorithm (3 nodes) ---
+Centralized (3 nodes): 3,51,3.40,80.87
+
+--- Ricart-Agrawala Algorithm (3 nodes) ---
+Ricart-Agrawala (3 nodes): 3,60,4.00,223.67,4
+
+==============================================
+Running experiments with 5 nodes
+==============================================
+
+--- Centralized Algorithm (5 nodes) ---
+Centralized (5 nodes): 5,85,3.40,84.16
+
+--- Ricart-Agrawala Algorithm (5 nodes) ---
+Ricart-Agrawala (5 nodes): 5,200,8.00,364.80,8
+
+==============================================
+Running experiments with 8 nodes
+==============================================
+
+--- Centralized Algorithm (8 nodes) ---
+Centralized (8 nodes): 8,136,3.40,81.68
+
+--- Ricart-Agrawala Algorithm (8 nodes) ---
+Ricart-Agrawala (8 nodes): 8,560,14.00,572.63,14
+
+==============================================
+Running experiments with 10 nodes
+==============================================
+
+--- Centralized Algorithm (10 nodes) ---
+Centralized (10 nodes): 10,170,3.40,80.44
+
+--- Ricart-Agrawala Algorithm (10 nodes) ---
+Ricart-Agrawala (10 nodes): 10,900,18.00,769.80,18
+
+
+==============================================
+EXPERIMENTS COMPLETED
+==============================================
+
+Results saved to:
+  - centralized_results.csv
+  - ricart_agrawala_results.csv
+
+Centralized Results:
+Nodes,TotalMessages,AvgMessagesPerCS,AvgLatency
+2,34,3.40,78.20
+3,51,3.40,80.87
+5,85,3.40,84.16
+8,136,3.40,81.68
+10,170,3.40,80.44
+
+Ricart-Agrawala Results:
+Nodes,TotalMessages,AvgMessagesPerCS,AvgLatency,TheoreticalPerCS
+2,20,2.00,142.50,2
+3,60,4.00,223.67,4
+5,200,8.00,364.80,8
+8,560,14.00,572.63,14
+10,900,18.00,769.80,18

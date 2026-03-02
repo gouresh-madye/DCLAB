@@ -1,0 +1,2612 @@
+================================================
+  Ricart-Agrawala Mutual Exclusion Experiment
+================================================
+Number of Nodes: 10
+CS per Node: 5
+Expected Messages per CS: 2(10-1) = 18
+
+Starting 10 nodes...
+
+Started Node 1
+Started Node 2
+Started Node 3
+Started Node 4
+Started Node 5
+Started Node 6
+Started Node 7
+Started Node 8
+Started Node 9
+Started Node 10
+[Node1] Listening on port 10001
+[Node3] Listening on port 10003
+[Node2] Listening on port 10002
+[Node5] Listening on port 10005
+[Node4] Listening on port 10004
+[Node6] Listening on port 10006
+[Node7] Listening on port 10007
+[Node8] Listening on port 10008
+[Node9] Listening on port 10009
+[Node10] Listening on port 10010
+[Node1] Connecting to peers...
+[Node1] Connected to 9 peers
+[Node3] Connecting to peers...
+[Node2] Connecting to peers...
+[Node3] Connected to 9 peers
+[Node2] Connected to 9 peers
+[Node4] Connecting to peers...
+[Node5] Connecting to peers...
+[Node6] Connecting to peers...
+[Node4] Connected to 9 peers
+[Node5] Connected to 9 peers
+[Node7] Connecting to peers...
+[Node6] Connected to 9 peers
+[Node8] Connecting to peers...
+[Node7] Connected to 9 peers
+[Node8] Connected to 9 peers
+[Node9] Connecting to peers...
+[Node9] Connected to 9 peers
+[Node10] Connecting to peers...
+[Node10] Connected to 9 peers
+
+Signaling experiment start to all nodes...
+
+Waiting for all nodes to complete...
+
+[Node3] Experiment started
+[Node3] Requesting CS #1 with timestamp 1
+[Node4] Experiment started
+[Node4] Requesting CS #1 with timestamp 1
+[Node3 -> Node1] REQUEST(ts=1)
+[Node3 -> Node2] REQUEST(ts=1)
+[Node3 -> Node4] REQUEST(ts=1)
+[Node3 -> Node5] REQUEST(ts=1)
+[Node3 -> Node6] REQUEST(ts=1)
+[Node3 -> Node7] REQUEST(ts=1)
+[Node3 -> Node8] REQUEST(ts=1)
+[Node3 -> Node9] REQUEST(ts=1)
+[Node3 -> Node10] REQUEST(ts=1)
+[Node4 -> Node1] REQUEST(ts=1)
+[Node4 -> Node2] REQUEST(ts=1)
+[Node4 -> Node3] REQUEST(ts=1)
+[Node4 -> Node5] REQUEST(ts=1)
+[Node4 -> Node6] REQUEST(ts=1)
+[Node4 -> Node7] REQUEST(ts=1)
+[Node4 -> Node8] REQUEST(ts=1)
+[Node4 -> Node9] REQUEST(ts=1)
+[Node4 -> Node10] REQUEST(ts=1)
+[Node4 <- Node3] REQUEST(ts=1)
+[Node2 <- Node3] REQUEST(ts=1)
+[Node1 <- Node3] REQUEST(ts=1)
+[Node6 <- Node3] REQUEST(ts=1)
+[Node8 <- Node3] REQUEST(ts=1)
+[Node9 <- Node3] REQUEST(ts=1)
+[Node5] Experiment started
+[Node7] Experiment started
+[Node7] Requesting CS #1 with timestamp 3
+[Node3 <- Node4] REQUEST(ts=1)
+[Node4 -> Node3] REPLY (immediate)
+[Node8] Experiment started
+[Node7 <- Node3] REQUEST(ts=1)
+[Node8] Requesting CS #1 with timestamp 3
+[Node10 <- Node3] REQUEST(ts=1)
+[Node3] Deferring REPLY to Node4
+[Node3 <- Node4] REPLY
+[Node6] Experiment started
+[Node5] Requesting CS #1 with timestamp 3
+[Node6] Requesting CS #1 with timestamp 3
+[Node8 -> Node3] REPLY (immediate)
+[Node6 -> Node1] REQUEST(ts=3)
+[Node6 -> Node2] REQUEST(ts=3)
+[Node6 -> Node3] REQUEST(ts=3)
+[Node6 -> Node4] REQUEST(ts=3)
+[Node6 -> Node5] REQUEST(ts=3)
+[Node6 -> Node7] REQUEST(ts=3)
+[Node6 -> Node8] REQUEST(ts=3)
+[Node6 -> Node9] REQUEST(ts=3)
+[Node6 -> Node10] REQUEST(ts=3)
+[Node9] Experiment started
+[Node9] Requesting CS #1 with timestamp 3
+[Node6 -> Node3] REPLY (immediate)
+[Node5 <- Node3] REQUEST(ts=1)
+[Node8 -> Node1] REQUEST(ts=3)
+[Node8 -> Node2] REQUEST(ts=3)
+[Node8 -> Node3] REQUEST(ts=3)
+[Node8 -> Node4] REQUEST(ts=3)
+[Node8 -> Node5] REQUEST(ts=3)
+[Node8 -> Node6] REQUEST(ts=3)
+[Node8 -> Node7] REQUEST(ts=3)
+[Node8 -> Node9] REQUEST(ts=3)
+[Node8 -> Node10] REQUEST(ts=3)
+[Node1 -> Node3] REPLY (immediate)
+[Node3 <- Node8] REPLY
+[Node8 <- Node4] REQUEST(ts=1)
+[Node3 <- Node8] REQUEST(ts=3)
+[Node8 -> Node4] REPLY (immediate)
+[Node3] Deferring REPLY to Node8
+[Node1 <- Node6] REQUEST(ts=3)
+[Node1 -> Node6] REPLY (immediate)
+[Node4 <- Node6] REQUEST(ts=3)
+[Node9 -> Node3] REPLY (immediate)
+[Node9 <- Node6] REQUEST(ts=3)
+[Node8 <- Node6] REQUEST(ts=3)
+[Node9 -> Node6] REPLY (immediate)
+[Node8 -> Node6] REPLY (immediate)
+[Node4] Deferring REPLY to Node6
+[Node6 <- Node4] REQUEST(ts=1)
+[Node6 -> Node4] REPLY (immediate)
+[Node1 <- Node8] REQUEST(ts=3)
+[Node1 -> Node8] REPLY (immediate)
+[Node4 <- Node8] REQUEST(ts=3)
+[Node6 <- Node8] REQUEST(ts=3)
+[Node4] Deferring REPLY to Node8
+[Node4 <- Node8] REPLY
+[Node2 -> Node3] REPLY (immediate)
+[Node6] Deferring REPLY to Node8
+[Node6 <- Node8] REPLY
+[Node1 <- Node4] REQUEST(ts=1)
+[Node1 -> Node4] REPLY (immediate)
+[Node3 <- Node6] REQUEST(ts=3)
+[Node3] Deferring REPLY to Node6
+[Node6 <- Node1] REPLY
+[Node6 <- Node9] REPLY
+[Node8 <- Node1] REPLY
+[Node4 <- Node6] REPLY
+[Node2 <- Node4] REQUEST(ts=1)
+[Node2 -> Node4] REPLY (immediate)
+[Node9 <- Node8] REQUEST(ts=3)
+[Node9 -> Node8] REPLY (immediate)
+[Node5 -> Node3] REPLY (immediate)
+[Node2 <- Node8] REQUEST(ts=3)
+[Node2 -> Node8] REPLY (immediate)
+[Node4 <- Node1] REPLY
+[Node1 <- Node9] REQUEST(ts=3)
+[Node4 <- Node2] REPLY
+[Node9 -> Node1] REQUEST(ts=3)
+[Node1 -> Node9] REPLY (immediate)
+[Node9 <- Node4] REQUEST(ts=1)
+[Node8 <- Node9] REPLY
+[Node9 -> Node2] REQUEST(ts=3)
+[Node9 -> Node4] REPLY (immediate)
+[Node9 -> Node3] REQUEST(ts=3)
+[Node2 <- Node9] REQUEST(ts=3)
+[Node10] Experiment started
+[Node9 -> Node4] REQUEST(ts=3)
+[Node2 -> Node9] REPLY (immediate)
+[Node9 -> Node5] REQUEST(ts=3)
+[Node9 -> Node6] REQUEST(ts=3)
+[Node5 <- Node8] REQUEST(ts=3)
+[Node9 -> Node7] REQUEST(ts=3)
+[Node9 -> Node8] REQUEST(ts=3)
+[Node9 -> Node10] REQUEST(ts=3)
+[Node10] Requesting CS #1 with timestamp 3
+[Node8 <- Node2] REPLY
+[Node3 <- Node6] REPLY
+[Node5] Deferring REPLY to Node8
+[Node9 <- Node1] REPLY
+[Node4 <- Node9] REPLY
+[Node5 -> Node1] REQUEST(ts=3)
+[Node4 <- Node9] REQUEST(ts=3)
+[Node10 -> Node1] REQUEST(ts=3)
+[Node4] Deferring REPLY to Node9
+[Node5 -> Node2] REQUEST(ts=3)
+[Node10 -> Node2] REQUEST(ts=3)
+[Node5 -> Node3] REQUEST(ts=3)
+[Node9 <- Node2] REPLY
+[Node10 -> Node3] REQUEST(ts=3)
+[Node10 -> Node4] REQUEST(ts=3)
+[Node10 -> Node5] REQUEST(ts=3)
+[Node7 -> Node3] REPLY (immediate)
+[Node10 -> Node6] REQUEST(ts=3)
+[Node6 <- Node9] REQUEST(ts=3)
+[Node10 -> Node7] REQUEST(ts=3)
+[Node8 <- Node9] REQUEST(ts=3)
+[Node10 -> Node8] REQUEST(ts=3)
+[Node10 -> Node9] REQUEST(ts=3)
+[Node2 <- Node6] REQUEST(ts=3)
+[Node6] Deferring REPLY to Node9
+[Node3 <- Node9] REPLY
+[Node2 -> Node6] REPLY (immediate)
+[Node3 <- Node9] REQUEST(ts=3)
+[Node3] Deferring REPLY to Node9
+[Node8] Deferring REPLY to Node9
+[Node7 -> Node1] REQUEST(ts=3)
+[Node10 -> Node3] REPLY (immediate)
+[Node5 -> Node4] REQUEST(ts=3)
+[Node2 <- Node5] REQUEST(ts=3)
+[Node7 -> Node2] REQUEST(ts=3)
+[Node4 <- Node5] REQUEST(ts=3)
+[Node2 -> Node5] REPLY (immediate)
+[Node5 -> Node6] REQUEST(ts=3)
+[Node4] Deferring REPLY to Node5
+[Node6 <- Node10] REQUEST(ts=3)
+[Node8 <- Node10] REQUEST(ts=3)
+[Node1 <- Node5] REQUEST(ts=3)
+[Node9 <- Node10] REQUEST(ts=3)
+[Node10 <- Node9] REQUEST(ts=3)
+[Node8] Deferring REPLY to Node10
+[Node1 -> Node5] REPLY (immediate)
+[Node2 <- Node7] REQUEST(ts=3)
+[Node10 -> Node9] REPLY (immediate)
+[Node2 -> Node7] REPLY (immediate)
+[Node3 <- Node10] REPLY
+[Node6] Deferring REPLY to Node10
+[Node5 <- Node9] REQUEST(ts=3)
+[Node4 <- Node10] REQUEST(ts=3)
+[Node4] Deferring REPLY to Node10
+[Node9] Deferring REPLY to Node10
+[Node5] Deferring REPLY to Node9
+[Node10 <- Node8] REQUEST(ts=3)
+[Node1 <- Node7] REQUEST(ts=3)
+[Node7 -> Node3] REQUEST(ts=3)
+[Node9 <- Node10] REPLY
+[Node1 -> Node7] REPLY (immediate)
+[Node7 -> Node4] REQUEST(ts=3)
+[Node10 -> Node8] REPLY (immediate)
+[Node2 <- Node10] REQUEST(ts=3)
+[Node5 -> Node7] REQUEST(ts=3)
+[Node6 <- Node5] REQUEST(ts=3)
+[Node5 <- Node6] REQUEST(ts=3)
+[Node2 -> Node10] REPLY (immediate)
+[Node6 -> Node5] REPLY (immediate)
+[Node7 -> Node5] REQUEST(ts=3)
+[Node1 <- Node10] REQUEST(ts=3)
+[Node4 <- Node7] REQUEST(ts=3)
+[Node4] Deferring REPLY to Node7
+[Node8 <- Node10] REPLY
+[Node7 -> Node6] REQUEST(ts=3)
+[Node5] Deferring REPLY to Node6
+[Node1 -> Node10] REPLY (immediate)
+[Node10 <- Node6] REQUEST(ts=3)
+[Node7 <- Node9] REQUEST(ts=3)
+[Node6 <- Node2] REPLY
+[Node5 -> Node8] REQUEST(ts=3)
+[Node6 <- Node7] REQUEST(ts=3)
+[Node7 -> Node8] REQUEST(ts=3)
+[Node6] Deferring REPLY to Node7
+[Node3 <- Node10] REQUEST(ts=3)
+[Node10 -> Node6] REPLY (immediate)
+[Node7 -> Node9] REQUEST(ts=3)
+[Node5 -> Node9] REQUEST(ts=3)
+[Node8 <- Node5] REQUEST(ts=3)
+[Node3] Deferring REPLY to Node10
+[Node9 <- Node5] REQUEST(ts=3)
+[Node10 <- Node4] REQUEST(ts=1)
+[Node5 -> Node10] REQUEST(ts=3)
+[Node6 <- Node10] REPLY
+[Node8 -> Node5] REPLY (immediate)
+[Node7 -> Node10] REQUEST(ts=3)
+[Node10 -> Node4] REPLY (immediate)
+[Node9 -> Node5] REPLY (immediate)
+[Node5 <- Node6] REPLY
+[Node10 <- Node7] REQUEST(ts=3)
+[Node8 <- Node7] REQUEST(ts=3)
+[Node3 <- Node1] REPLY
+[Node7] Deferring REPLY to Node9
+[Node9 <- Node7] REQUEST(ts=3)
+[Node8 -> Node7] REPLY (immediate)
+[Node10 -> Node7] REPLY (immediate)
+[Node5 <- Node4] REQUEST(ts=1)
+[Node4 <- Node10] REPLY
+[Node9 -> Node7] REPLY (immediate)
+[Node3 <- Node7] REPLY
+[Node7 <- Node8] REQUEST(ts=3)
+[Node5 -> Node4] REPLY (immediate)
+[Node3 <- Node5] REPLY
+[Node4 <- Node5] REPLY
+[Node5 <- Node9] REPLY
+[Node7] Deferring REPLY to Node8
+[Node5 <- Node8] REPLY
+[Node3 <- Node2] REPLY
+[Node10 <- Node1] REPLY
+[Node5 <- Node7] REQUEST(ts=3)
+[Node7 <- Node6] REQUEST(ts=3)
+[Node5] Deferring REPLY to Node7
+[Node3 <- Node5] REQUEST(ts=3)
+[Node7 -> Node6] REPLY (immediate)
+[Node5 <- Node1] REPLY
+[Node10 <- Node2] REPLY
+[Node3] Deferring REPLY to Node5
+[Node7 <- Node4] REQUEST(ts=1)
+[Node3 <- Node7] REQUEST(ts=3)
+[Node5 <- Node2] REPLY
+[Node10 <- Node5] REQUEST(ts=3)
+[Node3] Deferring REPLY to Node7
+[Node6 <- Node7] REPLY
+[Node5 <- Node10] REQUEST(ts=3)
+[Node10 -> Node5] REPLY (immediate)
+[Node3] Received all 9 replies
+[Node5] Deferring REPLY to Node10
+[Node7 -> Node4] REPLY (immediate)
+[Node4 <- Node7] REPLY
+[Node5 <- Node10] REPLY
+[Node3] === CRITICAL SECTION #1 START ===
+[Node7 <- Node8] REPLY
+[Node7 <- Node9] REPLY
+[Node7 <- Node1] REPLY
+[Node7 <- Node5] REQUEST(ts=3)
+[Node7 -> Node5] REPLY (immediate)
+[Node7 <- Node2] REPLY
+[Node5 <- Node7] REPLY
+[Node7 <- Node10] REQUEST(ts=3)
+[Node7] Deferring REPLY to Node10
+[Node7 <- Node10] REPLY
+[Node1] Experiment started
+[Node1] Requesting CS #1 with timestamp 11
+[Node1 -> Node2] REQUEST(ts=11)
+[Node2 <- Node1] REQUEST(ts=11)
+[Node1 -> Node3] REQUEST(ts=11)
+[Node1 -> Node4] REQUEST(ts=11)
+[Node2 -> Node1] REPLY (immediate)
+[Node1 -> Node5] REQUEST(ts=11)
+[Node1 -> Node6] REQUEST(ts=11)
+[Node3 <- Node1] REQUEST(ts=11)
+[Node1 -> Node7] REQUEST(ts=11)
+[Node4 <- Node1] REQUEST(ts=11)
+[Node3] Deferring REPLY to Node1
+[Node1 -> Node8] REQUEST(ts=11)
+[Node5 <- Node1] REQUEST(ts=11)
+[Node4] Deferring REPLY to Node1
+[Node7 <- Node1] REQUEST(ts=11)
+[Node5] Deferring REPLY to Node1
+[Node1 -> Node9] REQUEST(ts=11)
+[Node7] Deferring REPLY to Node1
+[Node8 <- Node1] REQUEST(ts=11)
+[Node1 <- Node2] REPLY
+[Node6 <- Node1] REQUEST(ts=11)
+[Node1 -> Node10] REQUEST(ts=11)
+[Node8] Deferring REPLY to Node1
+[Node6] Deferring REPLY to Node1
+[Node9 <- Node1] REQUEST(ts=11)
+[Node10 <- Node1] REQUEST(ts=11)
+[Node9] Deferring REPLY to Node1
+[Node10] Deferring REPLY to Node1
+[Node2] Experiment started
+[Node2] Requesting CS #1 with timestamp 13
+[Node1 <- Node2] REQUEST(ts=13)
+[Node2 -> Node1] REQUEST(ts=13)
+[Node2 -> Node3] REQUEST(ts=13)
+[Node2 -> Node4] REQUEST(ts=13)
+[Node3 <- Node2] REQUEST(ts=13)
+[Node2 -> Node5] REQUEST(ts=13)
+[Node3] Deferring REPLY to Node2
+[Node2 -> Node6] REQUEST(ts=13)
+[Node2 -> Node7] REQUEST(ts=13)
+[Node1] Deferring REPLY to Node2
+[Node2 -> Node8] REQUEST(ts=13)
+[Node4 <- Node2] REQUEST(ts=13)
+[Node6 <- Node2] REQUEST(ts=13)
+[Node4] Deferring REPLY to Node2
+[Node8 <- Node2] REQUEST(ts=13)
+[Node2 -> Node9] REQUEST(ts=13)
+[Node7 <- Node2] REQUEST(ts=13)
+[Node8] Deferring REPLY to Node2
+[Node9 <- Node2] REQUEST(ts=13)
+[Node6] Deferring REPLY to Node2
+[Node5 <- Node2] REQUEST(ts=13)
+[Node7] Deferring REPLY to Node2
+[Node9] Deferring REPLY to Node2
+[Node5] Deferring REPLY to Node2
+[Node2 -> Node10] REQUEST(ts=13)
+[Node10 <- Node2] REQUEST(ts=13)
+[Node10] Deferring REPLY to Node2
+[Node3] === CRITICAL SECTION #1 END ===
+[Node4 <- Node3] REPLY
+[Node4] Received all 9 replies
+[Node4] === CRITICAL SECTION #1 START ===
+[Node3 -> Node4] REPLY (deferred)
+[Node3 -> Node8] REPLY (deferred)
+[Node3 -> Node6] REPLY (deferred)
+[Node3 -> Node9] REPLY (deferred)
+[Node8 <- Node3] REPLY
+[Node3 -> Node10] REPLY (deferred)
+[Node6 <- Node3] REPLY
+[Node10 <- Node3] REPLY
+[Node9 <- Node3] REPLY
+[Node3 -> Node5] REPLY (deferred)
+[Node3 -> Node7] REPLY (deferred)
+[Node5 <- Node3] REPLY
+[Node3 -> Node1] REPLY (deferred)
+[Node3 -> Node2] REPLY (deferred)
+[Node7 <- Node3] REPLY
+[Node1 <- Node3] REPLY
+[Node3] Completed CS 1/5
+[Node2 <- Node3] REPLY
+[Node3] Requesting CS #2 with timestamp 20
+[Node3 -> Node1] REQUEST(ts=20)
+[Node3 -> Node2] REQUEST(ts=20)
+[Node3 -> Node4] REQUEST(ts=20)
+[Node1 <- Node3] REQUEST(ts=20)
+[Node3 -> Node5] REQUEST(ts=20)
+[Node2 <- Node3] REQUEST(ts=20)
+[Node3 -> Node6] REQUEST(ts=20)
+[Node3 -> Node7] REQUEST(ts=20)
+[Node1] Deferring REPLY to Node3
+[Node3 -> Node8] REQUEST(ts=20)
+[Node5 <- Node3] REQUEST(ts=20)
+[Node4 <- Node3] REQUEST(ts=20)
+[Node3 -> Node9] REQUEST(ts=20)
+[Node7 <- Node3] REQUEST(ts=20)
+[Node6 <- Node3] REQUEST(ts=20)
+[Node8 <- Node3] REQUEST(ts=20)
+[Node7] Deferring REPLY to Node3
+[Node3 -> Node10] REQUEST(ts=20)
+[Node5] Deferring REPLY to Node3
+[Node8] Deferring REPLY to Node3
+[Node6] Deferring REPLY to Node3
+[Node4] Deferring REPLY to Node3
+[Node2] Deferring REPLY to Node3
+[Node9 <- Node3] REQUEST(ts=20)
+[Node10 <- Node3] REQUEST(ts=20)
+[Node9] Deferring REPLY to Node3
+[Node10] Deferring REPLY to Node3
+[Node4] === CRITICAL SECTION #1 END ===
+[Node6 <- Node4] REPLY
+[Node4 -> Node6] REPLY (deferred)
+[Node4 -> Node8] REPLY (deferred)
+[Node4 -> Node9] REPLY (deferred)
+[Node4 -> Node5] REPLY (deferred)
+[Node4 -> Node10] REPLY (deferred)
+[Node4 -> Node7] REPLY (deferred)
+[Node4 -> Node1] REPLY (deferred)
+[Node4 -> Node2] REPLY (deferred)
+[Node9 <- Node4] REPLY
+[Node10 <- Node4] REPLY
+[Node7 <- Node4] REPLY
+[Node1 <- Node4] REPLY
+[Node5 <- Node4] REPLY
+[Node2 <- Node4] REPLY
+[Node8 <- Node4] REPLY
+[Node3 <- Node4] REPLY
+[Node4 -> Node3] REPLY (deferred)
+[Node4] Completed CS 1/5
+[Node5] Received all 9 replies
+[Node5] === CRITICAL SECTION #1 START ===
+[Node4] Requesting CS #2 with timestamp 22
+[Node4 -> Node1] REQUEST(ts=22)
+[Node4 -> Node2] REQUEST(ts=22)
+[Node4 -> Node3] REQUEST(ts=22)
+[Node4 -> Node5] REQUEST(ts=22)
+[Node1 <- Node4] REQUEST(ts=22)
+[Node1] Deferring REPLY to Node4
+[Node2 <- Node4] REQUEST(ts=22)
+[Node3 <- Node4] REQUEST(ts=22)
+[Node4 -> Node6] REQUEST(ts=22)
+[Node5 <- Node4] REQUEST(ts=22)
+[Node3] Deferring REPLY to Node4
+[Node5] Deferring REPLY to Node4
+[Node6 <- Node4] REQUEST(ts=22)
+[Node6] Deferring REPLY to Node4
+[Node4 -> Node7] REQUEST(ts=22)
+[Node2] Deferring REPLY to Node4
+[Node4 -> Node8] REQUEST(ts=22)
+[Node7 <- Node4] REQUEST(ts=22)
+[Node7] Deferring REPLY to Node4
+[Node4 -> Node9] REQUEST(ts=22)
+[Node8 <- Node4] REQUEST(ts=22)
+[Node4 -> Node10] REQUEST(ts=22)
+[Node8] Deferring REPLY to Node4
+[Node9 <- Node4] REQUEST(ts=22)
+[Node9] Deferring REPLY to Node4
+[Node10 <- Node4] REQUEST(ts=22)
+[Node10] Deferring REPLY to Node4
+[Node5] === CRITICAL SECTION #1 END ===
+[Node8 <- Node5] REPLY
+[Node5 -> Node8] REPLY (deferred)
+[Node5 -> Node9] REPLY (deferred)
+[Node5 -> Node6] REPLY (deferred)
+[Node5 -> Node7] REPLY (deferred)
+[Node5 -> Node10] REPLY (deferred)
+[Node9 <- Node5] REPLY
+[Node5 -> Node1] REPLY (deferred)
+[Node6 <- Node5] REPLY
+[Node7 <- Node5] REPLY
+[Node10 <- Node5] REPLY
+[Node5 -> Node2] REPLY (deferred)
+[Node1 <- Node5] REPLY
+[Node5 -> Node3] REPLY (deferred)
+[Node5 -> Node4] REPLY (deferred)
+[Node2 <- Node5] REPLY
+[Node3 <- Node5] REPLY
+[Node6] Received all 9 replies
+[Node4 <- Node5] REPLY
+[Node5] Completed CS 1/5
+[Node6] === CRITICAL SECTION #1 START ===
+[Node5] Requesting CS #2 with timestamp 28
+[Node5 -> Node1] REQUEST(ts=28)
+[Node5 -> Node2] REQUEST(ts=28)
+[Node5 -> Node3] REQUEST(ts=28)
+[Node5 -> Node4] REQUEST(ts=28)
+[Node1 <- Node5] REQUEST(ts=28)
+[Node5 -> Node6] REQUEST(ts=28)
+[Node1] Deferring REPLY to Node5
+[Node2 <- Node5] REQUEST(ts=28)
+[Node5 -> Node7] REQUEST(ts=28)
+[Node2] Deferring REPLY to Node5
+[Node5 -> Node8] REQUEST(ts=28)
+[Node5 -> Node9] REQUEST(ts=28)
+[Node3 <- Node5] REQUEST(ts=28)
+[Node5 -> Node10] REQUEST(ts=28)
+[Node4 <- Node5] REQUEST(ts=28)
+[Node3] Deferring REPLY to Node5
+[Node7 <- Node5] REQUEST(ts=28)
+[Node4] Deferring REPLY to Node5
+[Node8 <- Node5] REQUEST(ts=28)
+[Node7] Deferring REPLY to Node5
+[Node6 <- Node5] REQUEST(ts=28)
+[Node9 <- Node5] REQUEST(ts=28)
+[Node8] Deferring REPLY to Node5
+[Node6] Deferring REPLY to Node5
+[Node9] Deferring REPLY to Node5
+[Node10 <- Node5] REQUEST(ts=28)
+[Node10] Deferring REPLY to Node5
+[Node6] === CRITICAL SECTION #1 END ===
+[Node8 <- Node6] REPLY
+[Node6 -> Node8] REPLY (deferred)
+[Node6 -> Node9] REPLY (deferred)
+[Node6 -> Node10] REPLY (deferred)
+[Node6 -> Node7] REPLY (deferred)
+[Node6 -> Node1] REPLY (deferred)
+[Node9 <- Node6] REPLY
+[Node6 -> Node2] REPLY (deferred)
+[Node6 -> Node3] REPLY (deferred)
+[Node6 -> Node4] REPLY (deferred)
+[Node10 <- Node6] REPLY
+[Node6 -> Node5] REPLY (deferred)
+[Node7 <- Node6] REPLY
+[Node1 <- Node6] REPLY
+[Node2 <- Node6] REPLY
+[Node3 <- Node6] REPLY
+[Node6] Completed CS 1/5
+[Node5 <- Node6] REPLY
+[Node4 <- Node6] REPLY
+[Node7] Received all 9 replies
+[Node7] === CRITICAL SECTION #1 START ===
+[Node6] Requesting CS #2 with timestamp 30
+[Node6 -> Node1] REQUEST(ts=30)
+[Node6 -> Node2] REQUEST(ts=30)
+[Node6 -> Node3] REQUEST(ts=30)
+[Node1 <- Node6] REQUEST(ts=30)
+[Node1] Deferring REPLY to Node6
+[Node2 <- Node6] REQUEST(ts=30)
+[Node6 -> Node4] REQUEST(ts=30)
+[Node3 <- Node6] REQUEST(ts=30)
+[Node2] Deferring REPLY to Node6
+[Node3] Deferring REPLY to Node6
+[Node6 -> Node5] REQUEST(ts=30)
+[Node4 <- Node6] REQUEST(ts=30)
+[Node6 -> Node7] REQUEST(ts=30)
+[Node4] Deferring REPLY to Node6
+[Node6 -> Node8] REQUEST(ts=30)
+[Node6 -> Node9] REQUEST(ts=30)
+[Node6 -> Node10] REQUEST(ts=30)
+[Node7 <- Node6] REQUEST(ts=30)
+[Node5 <- Node6] REQUEST(ts=30)
+[Node7] Deferring REPLY to Node6
+[Node5] Deferring REPLY to Node6
+[Node9 <- Node6] REQUEST(ts=30)
+[Node9] Deferring REPLY to Node6
+[Node8 <- Node6] REQUEST(ts=30)
+[Node10 <- Node6] REQUEST(ts=30)
+[Node8] Deferring REPLY to Node6
+[Node10] Deferring REPLY to Node6
+[Node7] === CRITICAL SECTION #1 END ===
+[Node9 <- Node7] REPLY
+[Node7 -> Node9] REPLY (deferred)
+[Node7 -> Node8] REPLY (deferred)
+[Node7 -> Node10] REPLY (deferred)
+[Node7 -> Node1] REPLY (deferred)
+[Node7 -> Node2] REPLY (deferred)
+[Node8 <- Node7] REPLY
+[Node7 -> Node3] REPLY (deferred)
+[Node10 <- Node7] REPLY
+[Node7 -> Node4] REPLY (deferred)
+[Node1 <- Node7] REPLY
+[Node7 -> Node5] REPLY (deferred)
+[Node2 <- Node7] REPLY
+[Node7 -> Node6] REPLY (deferred)
+[Node3 <- Node7] REPLY
+[Node4 <- Node7] REPLY
+[Node5 <- Node7] REPLY
+[Node8] Received all 9 replies
+[Node7] Completed CS 1/5
+[Node6 <- Node7] REPLY
+[Node8] === CRITICAL SECTION #1 START ===
+[Node7] Requesting CS #2 with timestamp 32
+[Node7 -> Node1] REQUEST(ts=32)
+[Node7 -> Node2] REQUEST(ts=32)
+[Node7 -> Node3] REQUEST(ts=32)
+[Node7 -> Node4] REQUEST(ts=32)
+[Node1 <- Node7] REQUEST(ts=32)
+[Node2 <- Node7] REQUEST(ts=32)
+[Node7 -> Node5] REQUEST(ts=32)
+[Node1] Deferring REPLY to Node7
+[Node2] Deferring REPLY to Node7
+[Node7 -> Node6] REQUEST(ts=32)
+[Node7 -> Node8] REQUEST(ts=32)
+[Node3 <- Node7] REQUEST(ts=32)
+[Node4 <- Node7] REQUEST(ts=32)
+[Node6 <- Node7] REQUEST(ts=32)
+[Node4] Deferring REPLY to Node7
+[Node6] Deferring REPLY to Node7
+[Node8 <- Node7] REQUEST(ts=32)
+[Node5 <- Node7] REQUEST(ts=32)
+[Node8] Deferring REPLY to Node7
+[Node3] Deferring REPLY to Node7
+[Node7 -> Node9] REQUEST(ts=32)
+[Node5] Deferring REPLY to Node7
+[Node9 <- Node7] REQUEST(ts=32)
+[Node7 -> Node10] REQUEST(ts=32)
+[Node9] Deferring REPLY to Node7
+[Node10 <- Node7] REQUEST(ts=32)
+[Node10] Deferring REPLY to Node7
+[Node8] === CRITICAL SECTION #1 END ===
+[Node9 <- Node8] REPLY
+[Node9] Received all 9 replies
+[Node9] === CRITICAL SECTION #1 START ===
+[Node8 -> Node9] REPLY (deferred)
+[Node8 -> Node10] REPLY (deferred)
+[Node8 -> Node1] REPLY (deferred)
+[Node8 -> Node2] REPLY (deferred)
+[Node10 <- Node8] REPLY
+[Node8 -> Node3] REPLY (deferred)
+[Node1 <- Node8] REPLY
+[Node8 -> Node4] REPLY (deferred)
+[Node8 -> Node5] REPLY (deferred)
+[Node2 <- Node8] REPLY
+[Node8 -> Node6] REPLY (deferred)
+[Node3 <- Node8] REPLY
+[Node8 -> Node7] REPLY (deferred)
+[Node4 <- Node8] REPLY
+[Node5 <- Node8] REPLY
+[Node6 <- Node8] REPLY
+[Node7 <- Node8] REPLY
+[Node8] Completed CS 1/5
+[Node8] Requesting CS #2 with timestamp 34
+[Node8 -> Node1] REQUEST(ts=34)
+[Node8 -> Node2] REQUEST(ts=34)
+[Node8 -> Node3] REQUEST(ts=34)
+[Node1 <- Node8] REQUEST(ts=34)
+[Node8 -> Node4] REQUEST(ts=34)
+[Node1] Deferring REPLY to Node8
+[Node2 <- Node8] REQUEST(ts=34)
+[Node8 -> Node5] REQUEST(ts=34)
+[Node2] Deferring REPLY to Node8
+[Node3 <- Node8] REQUEST(ts=34)
+[Node4 <- Node8] REQUEST(ts=34)
+[Node5 <- Node8] REQUEST(ts=34)
+[Node3] Deferring REPLY to Node8
+[Node8 -> Node6] REQUEST(ts=34)
+[Node5] Deferring REPLY to Node8
+[Node4] Deferring REPLY to Node8
+[Node8 -> Node7] REQUEST(ts=34)
+[Node8 -> Node9] REQUEST(ts=34)
+[Node6 <- Node8] REQUEST(ts=34)
+[Node8 -> Node10] REQUEST(ts=34)
+[Node6] Deferring REPLY to Node8
+[Node7 <- Node8] REQUEST(ts=34)
+[Node7] Deferring REPLY to Node8
+[Node9 <- Node8] REQUEST(ts=34)
+[Node10 <- Node8] REQUEST(ts=34)
+[Node9] Deferring REPLY to Node8
+[Node10] Deferring REPLY to Node8
+[Node9] === CRITICAL SECTION #1 END ===
+[Node10 <- Node9] REPLY
+[Node10] Received all 9 replies
+[Node10] === CRITICAL SECTION #1 START ===
+[Node9 -> Node10] REPLY (deferred)
+[Node9 -> Node1] REPLY (deferred)
+[Node9 -> Node2] REPLY (deferred)
+[Node9 -> Node3] REPLY (deferred)
+[Node9 -> Node4] REPLY (deferred)
+[Node1 <- Node9] REPLY
+[Node9 -> Node5] REPLY (deferred)
+[Node9 -> Node6] REPLY (deferred)
+[Node2 <- Node9] REPLY
+[Node4 <- Node9] REPLY
+[Node9 -> Node7] REPLY (deferred)
+[Node3 <- Node9] REPLY
+[Node5 <- Node9] REPLY
+[Node6 <- Node9] REPLY
+[Node9 -> Node8] REPLY (deferred)
+[Node7 <- Node9] REPLY
+[Node8 <- Node9] REPLY
+[Node9] Completed CS 1/5
+[Node9] Requesting CS #2 with timestamp 36
+[Node9 -> Node1] REQUEST(ts=36)
+[Node9 -> Node2] REQUEST(ts=36)
+[Node1 <- Node9] REQUEST(ts=36)
+[Node2 <- Node9] REQUEST(ts=36)
+[Node9 -> Node3] REQUEST(ts=36)
+[Node1] Deferring REPLY to Node9
+[Node3 <- Node9] REQUEST(ts=36)
+[Node9 -> Node4] REQUEST(ts=36)
+[Node2] Deferring REPLY to Node9
+[Node3] Deferring REPLY to Node9
+[Node4 <- Node9] REQUEST(ts=36)
+[Node4] Deferring REPLY to Node9
+[Node9 -> Node5] REQUEST(ts=36)
+[Node9 -> Node6] REQUEST(ts=36)
+[Node5 <- Node9] REQUEST(ts=36)
+[Node5] Deferring REPLY to Node9
+[Node9 -> Node7] REQUEST(ts=36)
+[Node6 <- Node9] REQUEST(ts=36)
+[Node6] Deferring REPLY to Node9
+[Node9 -> Node8] REQUEST(ts=36)
+[Node7 <- Node9] REQUEST(ts=36)
+[Node9 -> Node10] REQUEST(ts=36)
+[Node7] Deferring REPLY to Node9
+[Node8 <- Node9] REQUEST(ts=36)
+[Node8] Deferring REPLY to Node9
+[Node10 <- Node9] REQUEST(ts=36)
+[Node10] Deferring REPLY to Node9
+[Node10] === CRITICAL SECTION #1 END ===
+[Node1 <- Node10] REPLY
+[Node1] Received all 9 replies
+[Node1] === CRITICAL SECTION #1 START ===
+[Node10 -> Node1] REPLY (deferred)
+[Node10 -> Node2] REPLY (deferred)
+[Node10 -> Node3] REPLY (deferred)
+[Node10 -> Node4] REPLY (deferred)
+[Node10 -> Node5] REPLY (deferred)
+[Node2 <- Node10] REPLY
+[Node10 -> Node6] REPLY (deferred)
+[Node10 -> Node7] REPLY (deferred)
+[Node4 <- Node10] REPLY
+[Node10 -> Node8] REPLY (deferred)
+[Node5 <- Node10] REPLY
+[Node10 -> Node9] REPLY (deferred)
+[Node6 <- Node10] REPLY
+[Node3 <- Node10] REPLY
+[Node7 <- Node10] REPLY
+[Node8 <- Node10] REPLY
+[Node9 <- Node10] REPLY
+[Node10] Completed CS 1/5
+[Node10] Requesting CS #2 with timestamp 38
+[Node10 -> Node1] REQUEST(ts=38)
+[Node10 -> Node2] REQUEST(ts=38)
+[Node10 -> Node3] REQUEST(ts=38)
+[Node10 -> Node4] REQUEST(ts=38)
+[Node1 <- Node10] REQUEST(ts=38)
+[Node2 <- Node10] REQUEST(ts=38)
+[Node10 -> Node5] REQUEST(ts=38)
+[Node2] Deferring REPLY to Node10
+[Node1] Deferring REPLY to Node10
+[Node3 <- Node10] REQUEST(ts=38)
+[Node3] Deferring REPLY to Node10
+[Node5 <- Node10] REQUEST(ts=38)
+[Node4 <- Node10] REQUEST(ts=38)
+[Node10 -> Node6] REQUEST(ts=38)
+[Node5] Deferring REPLY to Node10
+[Node4] Deferring REPLY to Node10
+[Node10 -> Node7] REQUEST(ts=38)
+[Node6 <- Node10] REQUEST(ts=38)
+[Node6] Deferring REPLY to Node10
+[Node10 -> Node8] REQUEST(ts=38)
+[Node10 -> Node9] REQUEST(ts=38)
+[Node7 <- Node10] REQUEST(ts=38)
+[Node7] Deferring REPLY to Node10
+[Node8 <- Node10] REQUEST(ts=38)
+[Node9 <- Node10] REQUEST(ts=38)
+[Node8] Deferring REPLY to Node10
+[Node9] Deferring REPLY to Node10
+[Node1] === CRITICAL SECTION #1 END ===
+[Node2 <- Node1] REPLY
+[Node2] Received all 9 replies
+[Node2] === CRITICAL SECTION #1 START ===
+[Node1 -> Node2] REPLY (deferred)
+[Node1 -> Node3] REPLY (deferred)
+[Node1 -> Node4] REPLY (deferred)
+[Node1 -> Node5] REPLY (deferred)
+[Node3 <- Node1] REPLY
+[Node1 -> Node6] REPLY (deferred)
+[Node1 -> Node7] REPLY (deferred)
+[Node1 -> Node8] REPLY (deferred)
+[Node4 <- Node1] REPLY
+[Node1 -> Node9] REPLY (deferred)
+[Node5 <- Node1] REPLY
+[Node1 -> Node10] REPLY (deferred)
+[Node6 <- Node1] REPLY
+[Node7 <- Node1] REPLY
+[Node8 <- Node1] REPLY
+[Node9 <- Node1] REPLY
+[Node1] Completed CS 1/5
+[Node10 <- Node1] REPLY
+[Node1] Requesting CS #2 with timestamp 40
+[Node1 -> Node2] REQUEST(ts=40)
+[Node1 -> Node3] REQUEST(ts=40)
+[Node1 -> Node4] REQUEST(ts=40)
+[Node1 -> Node5] REQUEST(ts=40)
+[Node3 <- Node1] REQUEST(ts=40)
+[Node1 -> Node6] REQUEST(ts=40)
+[Node3] Deferring REPLY to Node1
+[Node2 <- Node1] REQUEST(ts=40)
+[Node2] Deferring REPLY to Node1
+[Node4 <- Node1] REQUEST(ts=40)
+[Node5 <- Node1] REQUEST(ts=40)
+[Node6 <- Node1] REQUEST(ts=40)
+[Node1 -> Node7] REQUEST(ts=40)
+[Node4] Deferring REPLY to Node1
+[Node6] Deferring REPLY to Node1
+[Node1 -> Node8] REQUEST(ts=40)
+[Node5] Deferring REPLY to Node1
+[Node1 -> Node9] REQUEST(ts=40)
+[Node1 -> Node10] REQUEST(ts=40)
+[Node8 <- Node1] REQUEST(ts=40)
+[Node7 <- Node1] REQUEST(ts=40)
+[Node8] Deferring REPLY to Node1
+[Node9 <- Node1] REQUEST(ts=40)
+[Node7] Deferring REPLY to Node1
+[Node10 <- Node1] REQUEST(ts=40)
+[Node9] Deferring REPLY to Node1
+[Node10] Deferring REPLY to Node1
+[Node2] === CRITICAL SECTION #1 END ===
+[Node3 <- Node2] REPLY
+[Node3] Received all 9 replies
+[Node3] === CRITICAL SECTION #2 START ===
+[Node2 -> Node3] REPLY (deferred)
+[Node2 -> Node4] REPLY (deferred)
+[Node2 -> Node5] REPLY (deferred)
+[Node2 -> Node6] REPLY (deferred)
+[Node2 -> Node7] REPLY (deferred)
+[Node2 -> Node8] REPLY (deferred)
+[Node4 <- Node2] REPLY
+[Node2 -> Node9] REPLY (deferred)
+[Node2 -> Node10] REPLY (deferred)
+[Node5 <- Node2] REPLY
+[Node2 -> Node1] REPLY (deferred)
+[Node6 <- Node2] REPLY
+[Node8 <- Node2] REPLY
+[Node7 <- Node2] REPLY
+[Node9 <- Node2] REPLY
+[Node1 <- Node2] REPLY
+[Node10 <- Node2] REPLY
+[Node2] Completed CS 1/5
+[Node2] Requesting CS #2 with timestamp 42
+[Node2 -> Node1] REQUEST(ts=42)
+[Node2 -> Node3] REQUEST(ts=42)
+[Node2 -> Node4] REQUEST(ts=42)
+[Node2 -> Node5] REQUEST(ts=42)
+[Node2 -> Node6] REQUEST(ts=42)
+[Node2 -> Node7] REQUEST(ts=42)
+[Node2 -> Node8] REQUEST(ts=42)
+[Node2 -> Node9] REQUEST(ts=42)
+[Node3 <- Node2] REQUEST(ts=42)
+[Node2 -> Node10] REQUEST(ts=42)
+[Node3] Deferring REPLY to Node2
+[Node1 <- Node2] REQUEST(ts=42)
+[Node4 <- Node2] REQUEST(ts=42)
+[Node1] Deferring REPLY to Node2
+[Node7 <- Node2] REQUEST(ts=42)
+[Node4] Deferring REPLY to Node2
+[Node6 <- Node2] REQUEST(ts=42)
+[Node8 <- Node2] REQUEST(ts=42)
+[Node5 <- Node2] REQUEST(ts=42)
+[Node7] Deferring REPLY to Node2
+[Node10 <- Node2] REQUEST(ts=42)
+[Node9 <- Node2] REQUEST(ts=42)
+[Node8] Deferring REPLY to Node2
+[Node5] Deferring REPLY to Node2
+[Node10] Deferring REPLY to Node2
+[Node6] Deferring REPLY to Node2
+[Node9] Deferring REPLY to Node2
+[Node3] === CRITICAL SECTION #2 END ===
+[Node3 -> Node4] REPLY (deferred)
+[Node3 -> Node5] REPLY (deferred)
+[Node4 <- Node3] REPLY
+[Node3 -> Node6] REPLY (deferred)
+[Node5 <- Node3] REPLY
+[Node4] Received all 9 replies
+[Node4] === CRITICAL SECTION #2 START ===
+[Node3 -> Node7] REPLY (deferred)
+[Node3 -> Node8] REPLY (deferred)
+[Node3 -> Node9] REPLY (deferred)
+[Node6 <- Node3] REPLY
+[Node3 -> Node10] REPLY (deferred)
+[Node3 -> Node1] REPLY (deferred)
+[Node7 <- Node3] REPLY
+[Node8 <- Node3] REPLY
+[Node3 -> Node2] REPLY (deferred)
+[Node9 <- Node3] REPLY
+[Node10 <- Node3] REPLY
+[Node3] Completed CS 2/5
+[Node1 <- Node3] REPLY
+[Node2 <- Node3] REPLY
+[Node3] Requesting CS #3 with timestamp 44
+[Node3 -> Node1] REQUEST(ts=44)
+[Node3 -> Node2] REQUEST(ts=44)
+[Node3 -> Node4] REQUEST(ts=44)
+[Node3 -> Node5] REQUEST(ts=44)
+[Node3 -> Node6] REQUEST(ts=44)
+[Node3 -> Node7] REQUEST(ts=44)
+[Node3 -> Node8] REQUEST(ts=44)
+[Node2 <- Node3] REQUEST(ts=44)
+[Node3 -> Node9] REQUEST(ts=44)
+[Node2] Deferring REPLY to Node3
+[Node3 -> Node10] REQUEST(ts=44)
+[Node4 <- Node3] REQUEST(ts=44)
+[Node5 <- Node3] REQUEST(ts=44)
+[Node5] Deferring REPLY to Node3
+[Node4] Deferring REPLY to Node3
+[Node6 <- Node3] REQUEST(ts=44)
+[Node6] Deferring REPLY to Node3
+[Node1 <- Node3] REQUEST(ts=44)
+[Node1] Deferring REPLY to Node3
+[Node8 <- Node3] REQUEST(ts=44)
+[Node7 <- Node3] REQUEST(ts=44)
+[Node9 <- Node3] REQUEST(ts=44)
+[Node8] Deferring REPLY to Node3
+[Node7] Deferring REPLY to Node3
+[Node9] Deferring REPLY to Node3
+[Node10 <- Node3] REQUEST(ts=44)
+[Node10] Deferring REPLY to Node3
+[Node4] === CRITICAL SECTION #2 END ===
+[Node4 -> Node5] REPLY (deferred)
+[Node4 -> Node6] REPLY (deferred)
+[Node4 -> Node7] REPLY (deferred)
+[Node4 -> Node8] REPLY (deferred)
+[Node4 -> Node9] REPLY (deferred)
+[Node5 <- Node4] REPLY
+[Node4 -> Node10] REPLY (deferred)
+[Node6 <- Node4] REPLY
+[Node4 -> Node1] REPLY (deferred)
+[Node4 -> Node2] REPLY (deferred)
+[Node4 -> Node3] REPLY (deferred)
+[Node4] Completed CS 2/5
+[Node5] Received all 9 replies
+[Node7 <- Node4] REPLY
+[Node5] === CRITICAL SECTION #2 START ===
+[Node8 <- Node4] REPLY
+[Node9 <- Node4] REPLY
+[Node10 <- Node4] REPLY
+[Node1 <- Node4] REPLY
+[Node2 <- Node4] REPLY
+[Node3 <- Node4] REPLY
+[Node4] Requesting CS #3 with timestamp 46
+[Node4 -> Node1] REQUEST(ts=46)
+[Node4 -> Node2] REQUEST(ts=46)
+[Node4 -> Node3] REQUEST(ts=46)
+[Node4 -> Node5] REQUEST(ts=46)
+[Node1 <- Node4] REQUEST(ts=46)
+[Node4 -> Node6] REQUEST(ts=46)
+[Node1] Deferring REPLY to Node4
+[Node4 -> Node7] REQUEST(ts=46)
+[Node4 -> Node8] REQUEST(ts=46)
+[Node2 <- Node4] REQUEST(ts=46)
+[Node4 -> Node9] REQUEST(ts=46)
+[Node3 <- Node4] REQUEST(ts=46)
+[Node6 <- Node4] REQUEST(ts=46)
+[Node7 <- Node4] REQUEST(ts=46)
+[Node2] Deferring REPLY to Node4
+[Node6] Deferring REPLY to Node4
+[Node5 <- Node4] REQUEST(ts=46)
+[Node9 <- Node4] REQUEST(ts=46)
+[Node3] Deferring REPLY to Node4
+[Node4 -> Node10] REQUEST(ts=46)
+[Node8 <- Node4] REQUEST(ts=46)
+[Node5] Deferring REPLY to Node4
+[Node7] Deferring REPLY to Node4
+[Node9] Deferring REPLY to Node4
+[Node8] Deferring REPLY to Node4
+[Node10 <- Node4] REQUEST(ts=46)
+[Node10] Deferring REPLY to Node4
+[Node5] === CRITICAL SECTION #2 END ===
+[Node5 -> Node6] REPLY (deferred)
+[Node5 -> Node7] REPLY (deferred)
+[Node5 -> Node8] REPLY (deferred)
+[Node6 <- Node5] REPLY
+[Node5 -> Node9] REPLY (deferred)
+[Node5 -> Node10] REPLY (deferred)
+[Node5 -> Node1] REPLY (deferred)
+[Node7 <- Node5] REPLY
+[Node5 -> Node2] REPLY (deferred)
+[Node5 -> Node3] REPLY (deferred)
+[Node5 -> Node4] REPLY (deferred)
+[Node5] Completed CS 2/5
+[Node6] Received all 9 replies
+[Node6] === CRITICAL SECTION #2 START ===
+[Node8 <- Node5] REPLY
+[Node10 <- Node5] REPLY
+[Node1 <- Node5] REPLY
+[Node9 <- Node5] REPLY
+[Node2 <- Node5] REPLY
+[Node3 <- Node5] REPLY
+[Node4 <- Node5] REPLY
+[Node5] Requesting CS #3 with timestamp 48
+[Node5 -> Node1] REQUEST(ts=48)
+[Node5 -> Node2] REQUEST(ts=48)
+[Node5 -> Node3] REQUEST(ts=48)
+[Node5 -> Node4] REQUEST(ts=48)
+[Node1 <- Node5] REQUEST(ts=48)
+[Node5 -> Node6] REQUEST(ts=48)
+[Node2 <- Node5] REQUEST(ts=48)
+[Node1] Deferring REPLY to Node5
+[Node5 -> Node7] REQUEST(ts=48)
+[Node2] Deferring REPLY to Node5
+[Node5 -> Node8] REQUEST(ts=48)
+[Node5 -> Node9] REQUEST(ts=48)
+[Node4 <- Node5] REQUEST(ts=48)
+[Node5 -> Node10] REQUEST(ts=48)
+[Node6 <- Node5] REQUEST(ts=48)
+[Node3 <- Node5] REQUEST(ts=48)
+[Node10 <- Node5] REQUEST(ts=48)
+[Node4] Deferring REPLY to Node5
+[Node8 <- Node5] REQUEST(ts=48)
+[Node10] Deferring REPLY to Node5
+[Node6] Deferring REPLY to Node5
+[Node9 <- Node5] REQUEST(ts=48)
+[Node7 <- Node5] REQUEST(ts=48)
+[Node8] Deferring REPLY to Node5
+[Node3] Deferring REPLY to Node5
+[Node9] Deferring REPLY to Node5
+[Node7] Deferring REPLY to Node5
+[Node6] === CRITICAL SECTION #2 END ===
+[Node6 -> Node7] REPLY (deferred)
+[Node6 -> Node8] REPLY (deferred)
+[Node6 -> Node9] REPLY (deferred)
+[Node7 <- Node6] REPLY
+[Node8 <- Node6] REPLY
+[Node6 -> Node10] REPLY (deferred)
+[Node7] Received all 9 replies
+[Node7] === CRITICAL SECTION #2 START ===
+[Node9 <- Node6] REPLY
+[Node10 <- Node6] REPLY
+[Node6 -> Node1] REPLY (deferred)
+[Node6 -> Node2] REPLY (deferred)
+[Node6 -> Node3] REPLY (deferred)
+[Node1 <- Node6] REPLY
+[Node6 -> Node4] REPLY (deferred)
+[Node6 -> Node5] REPLY (deferred)
+[Node6] Completed CS 2/5
+[Node2 <- Node6] REPLY
+[Node3 <- Node6] REPLY
+[Node4 <- Node6] REPLY
+[Node5 <- Node6] REPLY
+[Node6] Requesting CS #3 with timestamp 50
+[Node6 -> Node1] REQUEST(ts=50)
+[Node6 -> Node2] REQUEST(ts=50)
+[Node6 -> Node3] REQUEST(ts=50)
+[Node6 -> Node4] REQUEST(ts=50)
+[Node6 -> Node5] REQUEST(ts=50)
+[Node1 <- Node6] REQUEST(ts=50)
+[Node2 <- Node6] REQUEST(ts=50)
+[Node6 -> Node7] REQUEST(ts=50)
+[Node5 <- Node6] REQUEST(ts=50)
+[Node1] Deferring REPLY to Node6
+[Node5] Deferring REPLY to Node6
+[Node4 <- Node6] REQUEST(ts=50)
+[Node7 <- Node6] REQUEST(ts=50)
+[Node6 -> Node8] REQUEST(ts=50)
+[Node4] Deferring REPLY to Node6
+[Node7] Deferring REPLY to Node6
+[Node3 <- Node6] REQUEST(ts=50)
+[Node2] Deferring REPLY to Node6
+[Node6 -> Node9] REQUEST(ts=50)
+[Node6 -> Node10] REQUEST(ts=50)
+[Node8 <- Node6] REQUEST(ts=50)
+[Node3] Deferring REPLY to Node6
+[Node8] Deferring REPLY to Node6
+[Node9 <- Node6] REQUEST(ts=50)
+[Node9] Deferring REPLY to Node6
+[Node10 <- Node6] REQUEST(ts=50)
+[Node10] Deferring REPLY to Node6
+[Node7] === CRITICAL SECTION #2 END ===
+[Node7 -> Node8] REPLY (deferred)
+[Node7 -> Node9] REPLY (deferred)
+[Node7 -> Node10] REPLY (deferred)
+[Node7 -> Node1] REPLY (deferred)
+[Node7 -> Node2] REPLY (deferred)
+[Node8 <- Node7] REPLY
+[Node7 -> Node3] REPLY (deferred)
+[Node9 <- Node7] REPLY
+[Node10 <- Node7] REPLY
+[Node1 <- Node7] REPLY
+[Node8] Received all 9 replies
+[Node8] === CRITICAL SECTION #2 START ===
+[Node2 <- Node7] REPLY
+[Node3 <- Node7] REPLY
+[Node7 -> Node4] REPLY (deferred)
+[Node7 -> Node5] REPLY (deferred)
+[Node4 <- Node7] REPLY
+[Node7 -> Node6] REPLY (deferred)
+[Node7] Completed CS 2/5
+[Node6 <- Node7] REPLY
+[Node5 <- Node7] REPLY
+[Node7] Requesting CS #3 with timestamp 52
+[Node7 -> Node1] REQUEST(ts=52)
+[Node7 -> Node2] REQUEST(ts=52)
+[Node7 -> Node3] REQUEST(ts=52)
+[Node7 -> Node4] REQUEST(ts=52)
+[Node7 -> Node5] REQUEST(ts=52)
+[Node7 -> Node6] REQUEST(ts=52)
+[Node1 <- Node7] REQUEST(ts=52)
+[Node3 <- Node7] REQUEST(ts=52)
+[Node1] Deferring REPLY to Node7
+[Node4 <- Node7] REQUEST(ts=52)
+[Node5 <- Node7] REQUEST(ts=52)
+[Node4] Deferring REPLY to Node7
+[Node5] Deferring REPLY to Node7
+[Node3] Deferring REPLY to Node7
+[Node7 -> Node8] REQUEST(ts=52)
+[Node6 <- Node7] REQUEST(ts=52)
+[Node2 <- Node7] REQUEST(ts=52)
+[Node6] Deferring REPLY to Node7
+[Node7 -> Node9] REQUEST(ts=52)
+[Node2] Deferring REPLY to Node7
+[Node7 -> Node10] REQUEST(ts=52)
+[Node8 <- Node7] REQUEST(ts=52)
+[Node8] Deferring REPLY to Node7
+[Node9 <- Node7] REQUEST(ts=52)
+[Node10 <- Node7] REQUEST(ts=52)
+[Node9] Deferring REPLY to Node7
+[Node10] Deferring REPLY to Node7
+[Node8] === CRITICAL SECTION #2 END ===
+[Node8 -> Node9] REPLY (deferred)
+[Node8 -> Node10] REPLY (deferred)
+[Node8 -> Node1] REPLY (deferred)
+[Node9 <- Node8] REPLY
+[Node10 <- Node8] REPLY
+[Node8 -> Node2] REPLY (deferred)
+[Node9] Received all 9 replies
+[Node9] === CRITICAL SECTION #2 START ===
+[Node8 -> Node3] REPLY (deferred)
+[Node8 -> Node4] REPLY (deferred)
+[Node1 <- Node8] REPLY
+[Node8 -> Node5] REPLY (deferred)
+[Node8 -> Node6] REPLY (deferred)
+[Node8 -> Node7] REPLY (deferred)
+[Node3 <- Node8] REPLY
+[Node2 <- Node8] REPLY
+[Node4 <- Node8] REPLY
+[Node5 <- Node8] REPLY
+[Node8] Completed CS 2/5
+[Node6 <- Node8] REPLY
+[Node7 <- Node8] REPLY
+[Node8] Requesting CS #3 with timestamp 54
+[Node8 -> Node1] REQUEST(ts=54)
+[Node8 -> Node2] REQUEST(ts=54)
+[Node1 <- Node8] REQUEST(ts=54)
+[Node8 -> Node3] REQUEST(ts=54)
+[Node1] Deferring REPLY to Node8
+[Node8 -> Node4] REQUEST(ts=54)
+[Node2 <- Node8] REQUEST(ts=54)
+[Node2] Deferring REPLY to Node8
+[Node8 -> Node5] REQUEST(ts=54)
+[Node3 <- Node8] REQUEST(ts=54)
+[Node3] Deferring REPLY to Node8
+[Node8 -> Node6] REQUEST(ts=54)
+[Node8 -> Node7] REQUEST(ts=54)
+[Node4 <- Node8] REQUEST(ts=54)
+[Node8 -> Node9] REQUEST(ts=54)
+[Node8 -> Node10] REQUEST(ts=54)
+[Node4] Deferring REPLY to Node8
+[Node5 <- Node8] REQUEST(ts=54)
+[Node5] Deferring REPLY to Node8
+[Node6 <- Node8] REQUEST(ts=54)
+[Node6] Deferring REPLY to Node8
+[Node7 <- Node8] REQUEST(ts=54)
+[Node7] Deferring REPLY to Node8
+[Node9 <- Node8] REQUEST(ts=54)
+[Node9] Deferring REPLY to Node8
+[Node10 <- Node8] REQUEST(ts=54)
+[Node10] Deferring REPLY to Node8
+[Node9] === CRITICAL SECTION #2 END ===
+[Node9 -> Node10] REPLY (deferred)
+[Node9 -> Node1] REPLY (deferred)
+[Node9 -> Node2] REPLY (deferred)
+[Node10 <- Node9] REPLY
+[Node9 -> Node3] REPLY (deferred)
+[Node10] Received all 9 replies
+[Node9 -> Node4] REPLY (deferred)
+[Node10] === CRITICAL SECTION #2 START ===
+[Node1 <- Node9] REPLY
+[Node9 -> Node5] REPLY (deferred)
+[Node3 <- Node9] REPLY
+[Node4 <- Node9] REPLY
+[Node9 -> Node6] REPLY (deferred)
+[Node2 <- Node9] REPLY
+[Node9 -> Node7] REPLY (deferred)
+[Node9 -> Node8] REPLY (deferred)
+[Node9] Completed CS 2/5
+[Node6 <- Node9] REPLY
+[Node7 <- Node9] REPLY
+[Node5 <- Node9] REPLY
+[Node8 <- Node9] REPLY
+[Node9] Requesting CS #3 with timestamp 56
+[Node9 -> Node1] REQUEST(ts=56)
+[Node9 -> Node2] REQUEST(ts=56)
+[Node9 -> Node3] REQUEST(ts=56)
+[Node9 -> Node4] REQUEST(ts=56)
+[Node1 <- Node9] REQUEST(ts=56)
+[Node1] Deferring REPLY to Node9
+[Node2 <- Node9] REQUEST(ts=56)
+[Node2] Deferring REPLY to Node9
+[Node9 -> Node5] REQUEST(ts=56)
+[Node3 <- Node9] REQUEST(ts=56)
+[Node9 -> Node6] REQUEST(ts=56)
+[Node3] Deferring REPLY to Node9
+[Node9 -> Node7] REQUEST(ts=56)
+[Node4 <- Node9] REQUEST(ts=56)
+[Node9 -> Node8] REQUEST(ts=56)
+[Node4] Deferring REPLY to Node9
+[Node9 -> Node10] REQUEST(ts=56)
+[Node6 <- Node9] REQUEST(ts=56)
+[Node6] Deferring REPLY to Node9
+[Node5 <- Node9] REQUEST(ts=56)
+[Node7 <- Node9] REQUEST(ts=56)
+[Node8 <- Node9] REQUEST(ts=56)
+[Node7] Deferring REPLY to Node9
+[Node10 <- Node9] REQUEST(ts=56)
+[Node5] Deferring REPLY to Node9
+[Node10] Deferring REPLY to Node9
+[Node8] Deferring REPLY to Node9
+[Node10] === CRITICAL SECTION #2 END ===
+[Node10 -> Node1] REPLY (deferred)
+[Node10 -> Node2] REPLY (deferred)
+[Node10 -> Node3] REPLY (deferred)
+[Node10 -> Node4] REPLY (deferred)
+[Node10 -> Node5] REPLY (deferred)
+[Node10 -> Node6] REPLY (deferred)
+[Node10 -> Node7] REPLY (deferred)
+[Node2 <- Node10] REPLY
+[Node1 <- Node10] REPLY
+[Node10 -> Node8] REPLY (deferred)
+[Node10 -> Node9] REPLY (deferred)
+[Node10] Completed CS 2/5
+[Node6 <- Node10] REPLY
+[Node3 <- Node10] REPLY
+[Node1] Received all 9 replies
+[Node5 <- Node10] REPLY
+[Node4 <- Node10] REPLY
+[Node1] === CRITICAL SECTION #2 START ===
+[Node7 <- Node10] REPLY
+[Node8 <- Node10] REPLY
+[Node9 <- Node10] REPLY
+[Node10] Requesting CS #3 with timestamp 58
+[Node10 -> Node1] REQUEST(ts=58)
+[Node10 -> Node2] REQUEST(ts=58)
+[Node10 -> Node3] REQUEST(ts=58)
+[Node10 -> Node4] REQUEST(ts=58)
+[Node10 -> Node5] REQUEST(ts=58)
+[Node3 <- Node10] REQUEST(ts=58)
+[Node1 <- Node10] REQUEST(ts=58)
+[Node2 <- Node10] REQUEST(ts=58)
+[Node5 <- Node10] REQUEST(ts=58)
+[Node2] Deferring REPLY to Node10
+[Node3] Deferring REPLY to Node10
+[Node5] Deferring REPLY to Node10
+[Node1] Deferring REPLY to Node10
+[Node10 -> Node6] REQUEST(ts=58)
+[Node4 <- Node10] REQUEST(ts=58)
+[Node6 <- Node10] REQUEST(ts=58)
+[Node6] Deferring REPLY to Node10
+[Node4] Deferring REPLY to Node10
+[Node10 -> Node7] REQUEST(ts=58)
+[Node10 -> Node8] REQUEST(ts=58)
+[Node10 -> Node9] REQUEST(ts=58)
+[Node7 <- Node10] REQUEST(ts=58)
+[Node7] Deferring REPLY to Node10
+[Node9 <- Node10] REQUEST(ts=58)
+[Node8 <- Node10] REQUEST(ts=58)
+[Node9] Deferring REPLY to Node10
+[Node8] Deferring REPLY to Node10
+[Node1] === CRITICAL SECTION #2 END ===
+[Node1 -> Node2] REPLY (deferred)
+[Node1 -> Node3] REPLY (deferred)
+[Node1 -> Node4] REPLY (deferred)
+[Node2 <- Node1] REPLY
+[Node1 -> Node5] REPLY (deferred)
+[Node1 -> Node6] REPLY (deferred)
+[Node3 <- Node1] REPLY
+[Node1 -> Node7] REPLY (deferred)
+[Node2] Received all 9 replies
+[Node2] === CRITICAL SECTION #2 START ===
+[Node1 -> Node8] REPLY (deferred)
+[Node4 <- Node1] REPLY
+[Node1 -> Node9] REPLY (deferred)
+[Node5 <- Node1] REPLY
+[Node1 -> Node10] REPLY (deferred)
+[Node7 <- Node1] REPLY
+[Node8 <- Node1] REPLY
+[Node6 <- Node1] REPLY
+[Node1] Completed CS 2/5
+[Node9 <- Node1] REPLY
+[Node10 <- Node1] REPLY
+[Node1] Requesting CS #3 with timestamp 60
+[Node1 -> Node2] REQUEST(ts=60)
+[Node1 -> Node3] REQUEST(ts=60)
+[Node1 -> Node4] REQUEST(ts=60)
+[Node1 -> Node5] REQUEST(ts=60)
+[Node1 -> Node6] REQUEST(ts=60)
+[Node1 -> Node7] REQUEST(ts=60)
+[Node2 <- Node1] REQUEST(ts=60)
+[Node1 -> Node8] REQUEST(ts=60)
+[Node2] Deferring REPLY to Node1
+[Node4 <- Node1] REQUEST(ts=60)
+[Node4] Deferring REPLY to Node1
+[Node5 <- Node1] REQUEST(ts=60)
+[Node5] Deferring REPLY to Node1
+[Node7 <- Node1] REQUEST(ts=60)
+[Node1 -> Node9] REQUEST(ts=60)
+[Node7] Deferring REPLY to Node1
+[Node1 -> Node10] REQUEST(ts=60)
+[Node8 <- Node1] REQUEST(ts=60)
+[Node9 <- Node1] REQUEST(ts=60)
+[Node8] Deferring REPLY to Node1
+[Node6 <- Node1] REQUEST(ts=60)
+[Node9] Deferring REPLY to Node1
+[Node3 <- Node1] REQUEST(ts=60)
+[Node6] Deferring REPLY to Node1
+[Node3] Deferring REPLY to Node1
+[Node10 <- Node1] REQUEST(ts=60)
+[Node10] Deferring REPLY to Node1
+[Node2] === CRITICAL SECTION #2 END ===
+[Node2 -> Node3] REPLY (deferred)
+[Node2 -> Node4] REPLY (deferred)
+[Node2 -> Node5] REPLY (deferred)
+[Node3 <- Node2] REPLY
+[Node2 -> Node6] REPLY (deferred)
+[Node2 -> Node7] REPLY (deferred)
+[Node4 <- Node2] REPLY
+[Node3] Received all 9 replies
+[Node2 -> Node8] REPLY (deferred)
+[Node5 <- Node2] REPLY
+[Node6 <- Node2] REPLY
+[Node2 -> Node9] REPLY (deferred)
+[Node2 -> Node10] REPLY (deferred)
+[Node3] === CRITICAL SECTION #3 START ===
+[Node8 <- Node2] REPLY
+[Node7 <- Node2] REPLY
+[Node9 <- Node2] REPLY
+[Node10 <- Node2] REPLY
+[Node1 <- Node2] REPLY
+[Node2 -> Node1] REPLY (deferred)
+[Node2] Completed CS 2/5
+[Node2] Requesting CS #3 with timestamp 62
+[Node2 -> Node1] REQUEST(ts=62)
+[Node2 -> Node3] REQUEST(ts=62)
+[Node2 -> Node4] REQUEST(ts=62)
+[Node1 <- Node2] REQUEST(ts=62)
+[Node2 -> Node5] REQUEST(ts=62)
+[Node1] Deferring REPLY to Node2
+[Node2 -> Node6] REQUEST(ts=62)
+[Node3 <- Node2] REQUEST(ts=62)
+[Node3] Deferring REPLY to Node2
+[Node5 <- Node2] REQUEST(ts=62)
+[Node5] Deferring REPLY to Node2
+[Node4 <- Node2] REQUEST(ts=62)
+[Node2 -> Node7] REQUEST(ts=62)
+[Node4] Deferring REPLY to Node2
+[Node2 -> Node8] REQUEST(ts=62)
+[Node6 <- Node2] REQUEST(ts=62)
+[Node2 -> Node9] REQUEST(ts=62)
+[Node7 <- Node2] REQUEST(ts=62)
+[Node6] Deferring REPLY to Node2
+[Node2 -> Node10] REQUEST(ts=62)
+[Node7] Deferring REPLY to Node2
+[Node9 <- Node2] REQUEST(ts=62)
+[Node9] Deferring REPLY to Node2
+[Node8 <- Node2] REQUEST(ts=62)
+[Node10 <- Node2] REQUEST(ts=62)
+[Node10] Deferring REPLY to Node2
+[Node8] Deferring REPLY to Node2
+[Node3] === CRITICAL SECTION #3 END ===
+[Node3 -> Node4] REPLY (deferred)
+[Node3 -> Node5] REPLY (deferred)
+[Node3 -> Node6] REPLY (deferred)
+[Node4 <- Node3] REPLY
+[Node3 -> Node7] REPLY (deferred)
+[Node3 -> Node8] REPLY (deferred)
+[Node3 -> Node9] REPLY (deferred)
+[Node6 <- Node3] REPLY
+[Node5 <- Node3] REPLY
+[Node7 <- Node3] REPLY
+[Node4] Received all 9 replies
+[Node4] === CRITICAL SECTION #3 START ===
+[Node3 -> Node10] REPLY (deferred)
+[Node8 <- Node3] REPLY
+[Node3 -> Node1] REPLY (deferred)
+[Node9 <- Node3] REPLY
+[Node3 -> Node2] REPLY (deferred)
+[Node10 <- Node3] REPLY
+[Node3] Completed CS 3/5
+[Node1 <- Node3] REPLY
+[Node2 <- Node3] REPLY
+[Node3] Requesting CS #4 with timestamp 64
+[Node3 -> Node1] REQUEST(ts=64)
+[Node3 -> Node2] REQUEST(ts=64)
+[Node3 -> Node4] REQUEST(ts=64)
+[Node3 -> Node5] REQUEST(ts=64)
+[Node3 -> Node6] REQUEST(ts=64)
+[Node1 <- Node3] REQUEST(ts=64)
+[Node1] Deferring REPLY to Node3
+[Node5 <- Node3] REQUEST(ts=64)
+[Node4 <- Node3] REQUEST(ts=64)
+[Node5] Deferring REPLY to Node3
+[Node4] Deferring REPLY to Node3
+[Node2 <- Node3] REQUEST(ts=64)
+[Node6 <- Node3] REQUEST(ts=64)
+[Node6] Deferring REPLY to Node3
+[Node2] Deferring REPLY to Node3
+[Node3 -> Node7] REQUEST(ts=64)
+[Node3 -> Node8] REQUEST(ts=64)
+[Node7 <- Node3] REQUEST(ts=64)
+[Node3 -> Node9] REQUEST(ts=64)
+[Node7] Deferring REPLY to Node3
+[Node3 -> Node10] REQUEST(ts=64)
+[Node9 <- Node3] REQUEST(ts=64)
+[Node8 <- Node3] REQUEST(ts=64)
+[Node9] Deferring REPLY to Node3
+[Node8] Deferring REPLY to Node3
+[Node10 <- Node3] REQUEST(ts=64)
+[Node10] Deferring REPLY to Node3
+[Node4] === CRITICAL SECTION #3 END ===
+[Node4 -> Node5] REPLY (deferred)
+[Node4 -> Node6] REPLY (deferred)
+[Node4 -> Node7] REPLY (deferred)
+[Node5 <- Node4] REPLY
+[Node4 -> Node8] REPLY (deferred)
+[Node4 -> Node9] REPLY (deferred)
+[Node6 <- Node4] REPLY
+[Node4 -> Node10] REPLY (deferred)
+[Node7 <- Node4] REPLY
+[Node8 <- Node4] REPLY
+[Node5] Received all 9 replies
+[Node5] === CRITICAL SECTION #3 START ===
+[Node4 -> Node1] REPLY (deferred)
+[Node4 -> Node2] REPLY (deferred)
+[Node9 <- Node4] REPLY
+[Node4 -> Node3] REPLY (deferred)
+[Node4] Completed CS 3/5
+[Node10 <- Node4] REPLY
+[Node1 <- Node4] REPLY
+[Node3 <- Node4] REPLY
+[Node2 <- Node4] REPLY
+[Node4] Requesting CS #4 with timestamp 66
+[Node4 -> Node1] REQUEST(ts=66)
+[Node4 -> Node2] REQUEST(ts=66)
+[Node4 -> Node3] REQUEST(ts=66)
+[Node1 <- Node4] REQUEST(ts=66)
+[Node4 -> Node5] REQUEST(ts=66)
+[Node4 -> Node6] REQUEST(ts=66)
+[Node4 -> Node7] REQUEST(ts=66)
+[Node1] Deferring REPLY to Node4
+[Node4 -> Node8] REQUEST(ts=66)
+[Node2 <- Node4] REQUEST(ts=66)
+[Node4 -> Node9] REQUEST(ts=66)
+[Node4 -> Node10] REQUEST(ts=66)
+[Node2] Deferring REPLY to Node4
+[Node5 <- Node4] REQUEST(ts=66)
+[Node5] Deferring REPLY to Node4
+[Node6 <- Node4] REQUEST(ts=66)
+[Node7 <- Node4] REQUEST(ts=66)
+[Node8 <- Node4] REQUEST(ts=66)
+[Node7] Deferring REPLY to Node4
+[Node3 <- Node4] REQUEST(ts=66)
+[Node9 <- Node4] REQUEST(ts=66)
+[Node3] Deferring REPLY to Node4
+[Node10 <- Node4] REQUEST(ts=66)
+[Node9] Deferring REPLY to Node4
+[Node6] Deferring REPLY to Node4
+[Node8] Deferring REPLY to Node4
+[Node10] Deferring REPLY to Node4
+[Node5] === CRITICAL SECTION #3 END ===
+[Node5 -> Node6] REPLY (deferred)
+[Node6 <- Node5] REPLY
+[Node5 -> Node7] REPLY (deferred)
+[Node6] Received all 9 replies
+[Node6] === CRITICAL SECTION #3 START ===
+[Node7 <- Node5] REPLY
+[Node8 <- Node5] REPLY
+[Node5 -> Node8] REPLY (deferred)
+[Node5 -> Node9] REPLY (deferred)
+[Node5 -> Node10] REPLY (deferred)
+[Node5 -> Node1] REPLY (deferred)
+[Node5 -> Node2] REPLY (deferred)
+[Node9 <- Node5] REPLY
+[Node5 -> Node3] REPLY (deferred)
+[Node5 -> Node4] REPLY (deferred)
+[Node5] Completed CS 3/5
+[Node10 <- Node5] REPLY
+[Node1 <- Node5] REPLY
+[Node2 <- Node5] REPLY
+[Node3 <- Node5] REPLY
+[Node4 <- Node5] REPLY
+[Node5] Requesting CS #4 with timestamp 68
+[Node5 -> Node1] REQUEST(ts=68)
+[Node5 -> Node2] REQUEST(ts=68)
+[Node5 -> Node3] REQUEST(ts=68)
+[Node5 -> Node4] REQUEST(ts=68)
+[Node1 <- Node5] REQUEST(ts=68)
+[Node5 -> Node6] REQUEST(ts=68)
+[Node1] Deferring REPLY to Node5
+[Node5 -> Node7] REQUEST(ts=68)
+[Node2 <- Node5] REQUEST(ts=68)
+[Node3 <- Node5] REQUEST(ts=68)
+[Node3] Deferring REPLY to Node5
+[Node4 <- Node5] REQUEST(ts=68)
+[Node6 <- Node5] REQUEST(ts=68)
+[Node6] Deferring REPLY to Node5
+[Node4] Deferring REPLY to Node5
+[Node5 -> Node8] REQUEST(ts=68)
+[Node7 <- Node5] REQUEST(ts=68)
+[Node5 -> Node9] REQUEST(ts=68)
+[Node7] Deferring REPLY to Node5
+[Node5 -> Node10] REQUEST(ts=68)
+[Node2] Deferring REPLY to Node5
+[Node8 <- Node5] REQUEST(ts=68)
+[Node8] Deferring REPLY to Node5
+[Node9 <- Node5] REQUEST(ts=68)
+[Node9] Deferring REPLY to Node5
+[Node10 <- Node5] REQUEST(ts=68)
+[Node10] Deferring REPLY to Node5
+[Node6] === CRITICAL SECTION #3 END ===
+[Node6 -> Node7] REPLY (deferred)
+[Node6 -> Node8] REPLY (deferred)
+[Node6 -> Node9] REPLY (deferred)
+[Node7 <- Node6] REPLY
+[Node6 -> Node10] REPLY (deferred)
+[Node8 <- Node6] REPLY
+[Node6 -> Node1] REPLY (deferred)
+[Node6 -> Node2] REPLY (deferred)
+[Node7] Received all 9 replies
+[Node6 -> Node3] REPLY (deferred)
+[Node10 <- Node6] REPLY
+[Node6 -> Node4] REPLY (deferred)
+[Node9 <- Node6] REPLY
+[Node6 -> Node5] REPLY (deferred)
+[Node6] Completed CS 3/5
+[Node7] === CRITICAL SECTION #3 START ===
+[Node1 <- Node6] REPLY
+[Node2 <- Node6] REPLY
+[Node3 <- Node6] REPLY
+[Node4 <- Node6] REPLY
+[Node5 <- Node6] REPLY
+[Node6] Requesting CS #4 with timestamp 70
+[Node6 -> Node1] REQUEST(ts=70)
+[Node6 -> Node2] REQUEST(ts=70)
+[Node6 -> Node3] REQUEST(ts=70)
+[Node6 -> Node4] REQUEST(ts=70)
+[Node6 -> Node5] REQUEST(ts=70)
+[Node6 -> Node7] REQUEST(ts=70)
+[Node6 -> Node8] REQUEST(ts=70)
+[Node6 -> Node9] REQUEST(ts=70)
+[Node6 -> Node10] REQUEST(ts=70)
+[Node3 <- Node6] REQUEST(ts=70)
+[Node3] Deferring REPLY to Node6
+[Node5 <- Node6] REQUEST(ts=70)
+[Node4 <- Node6] REQUEST(ts=70)
+[Node5] Deferring REPLY to Node6
+[Node4] Deferring REPLY to Node6
+[Node1 <- Node6] REQUEST(ts=70)
+[Node2 <- Node6] REQUEST(ts=70)
+[Node1] Deferring REPLY to Node6
+[Node2] Deferring REPLY to Node6
+[Node7 <- Node6] REQUEST(ts=70)
+[Node7] Deferring REPLY to Node6
+[Node8 <- Node6] REQUEST(ts=70)
+[Node8] Deferring REPLY to Node6
+[Node9 <- Node6] REQUEST(ts=70)
+[Node10 <- Node6] REQUEST(ts=70)
+[Node10] Deferring REPLY to Node6
+[Node9] Deferring REPLY to Node6
+[Node7] === CRITICAL SECTION #3 END ===
+[Node7 -> Node8] REPLY (deferred)
+[Node8 <- Node7] REPLY
+[Node7 -> Node9] REPLY (deferred)
+[Node8] Received all 9 replies
+[Node8] === CRITICAL SECTION #3 START ===
+[Node7 -> Node10] REPLY (deferred)
+[Node7 -> Node1] REPLY (deferred)
+[Node9 <- Node7] REPLY
+[Node7 -> Node2] REPLY (deferred)
+[Node10 <- Node7] REPLY
+[Node7 -> Node3] REPLY (deferred)
+[Node7 -> Node4] REPLY (deferred)
+[Node7 -> Node5] REPLY (deferred)
+[Node7 -> Node6] REPLY (deferred)
+[Node7] Completed CS 3/5
+[Node1 <- Node7] REPLY
+[Node3 <- Node7] REPLY
+[Node2 <- Node7] REPLY
+[Node4 <- Node7] REPLY
+[Node5 <- Node7] REPLY
+[Node6 <- Node7] REPLY
+[Node7] Requesting CS #4 with timestamp 72
+[Node7 -> Node1] REQUEST(ts=72)
+[Node7 -> Node2] REQUEST(ts=72)
+[Node7 -> Node3] REQUEST(ts=72)
+[Node7 -> Node4] REQUEST(ts=72)
+[Node1 <- Node7] REQUEST(ts=72)
+[Node7 -> Node5] REQUEST(ts=72)
+[Node1] Deferring REPLY to Node7
+[Node7 -> Node6] REQUEST(ts=72)
+[Node3 <- Node7] REQUEST(ts=72)
+[Node3] Deferring REPLY to Node7
+[Node5 <- Node7] REQUEST(ts=72)
+[Node4 <- Node7] REQUEST(ts=72)
+[Node2 <- Node7] REQUEST(ts=72)
+[Node5] Deferring REPLY to Node7
+[Node4] Deferring REPLY to Node7
+[Node7 -> Node8] REQUEST(ts=72)
+[Node2] Deferring REPLY to Node7
+[Node7 -> Node9] REQUEST(ts=72)
+[Node7 -> Node10] REQUEST(ts=72)
+[Node6 <- Node7] REQUEST(ts=72)
+[Node6] Deferring REPLY to Node7
+[Node8 <- Node7] REQUEST(ts=72)
+[Node8] Deferring REPLY to Node7
+[Node9 <- Node7] REQUEST(ts=72)
+[Node10 <- Node7] REQUEST(ts=72)
+[Node10] Deferring REPLY to Node7
+[Node9] Deferring REPLY to Node7
+[Node8] === CRITICAL SECTION #3 END ===
+[Node8 -> Node9] REPLY (deferred)
+[Node8 -> Node10] REPLY (deferred)
+[Node8 -> Node1] REPLY (deferred)
+[Node9 <- Node8] REPLY
+[Node8 -> Node2] REPLY (deferred)
+[Node10 <- Node8] REPLY
+[Node8 -> Node3] REPLY (deferred)
+[Node9] Received all 9 replies
+[Node9] === CRITICAL SECTION #3 START ===
+[Node2 <- Node8] REPLY
+[Node1 <- Node8] REPLY
+[Node8 -> Node4] REPLY (deferred)
+[Node3 <- Node8] REPLY
+[Node8 -> Node5] REPLY (deferred)
+[Node8 -> Node6] REPLY (deferred)
+[Node4 <- Node8] REPLY
+[Node8 -> Node7] REPLY (deferred)
+[Node8] Completed CS 3/5
+[Node5 <- Node8] REPLY
+[Node6 <- Node8] REPLY
+[Node7 <- Node8] REPLY
+[Node8] Requesting CS #4 with timestamp 74
+[Node8 -> Node1] REQUEST(ts=74)
+[Node8 -> Node2] REQUEST(ts=74)
+[Node8 -> Node3] REQUEST(ts=74)
+[Node8 -> Node4] REQUEST(ts=74)
+[Node8 -> Node5] REQUEST(ts=74)
+[Node1 <- Node8] REQUEST(ts=74)
+[Node8 -> Node6] REQUEST(ts=74)
+[Node1] Deferring REPLY to Node8
+[Node8 -> Node7] REQUEST(ts=74)
+[Node8 -> Node9] REQUEST(ts=74)
+[Node8 -> Node10] REQUEST(ts=74)
+[Node4 <- Node8] REQUEST(ts=74)
+[Node3 <- Node8] REQUEST(ts=74)
+[Node4] Deferring REPLY to Node8
+[Node3] Deferring REPLY to Node8
+[Node2 <- Node8] REQUEST(ts=74)
+[Node2] Deferring REPLY to Node8
+[Node5 <- Node8] REQUEST(ts=74)
+[Node5] Deferring REPLY to Node8
+[Node6 <- Node8] REQUEST(ts=74)
+[Node6] Deferring REPLY to Node8
+[Node7 <- Node8] REQUEST(ts=74)
+[Node7] Deferring REPLY to Node8
+[Node10 <- Node8] REQUEST(ts=74)
+[Node9 <- Node8] REQUEST(ts=74)
+[Node9] Deferring REPLY to Node8
+[Node10] Deferring REPLY to Node8
+[Node9] === CRITICAL SECTION #3 END ===
+[Node9 -> Node10] REPLY (deferred)
+[Node9 -> Node1] REPLY (deferred)
+[Node9 -> Node2] REPLY (deferred)
+[Node10 <- Node9] REPLY
+[Node1 <- Node9] REPLY
+[Node2 <- Node9] REPLY
+[Node9 -> Node3] REPLY (deferred)
+[Node3 <- Node9] REPLY
+[Node10] Received all 9 replies
+[Node10] === CRITICAL SECTION #3 START ===
+[Node9 -> Node4] REPLY (deferred)
+[Node9 -> Node5] REPLY (deferred)
+[Node9 -> Node6] REPLY (deferred)
+[Node9 -> Node7] REPLY (deferred)
+[Node4 <- Node9] REPLY
+[Node9 -> Node8] REPLY (deferred)
+[Node9] Completed CS 3/5
+[Node5 <- Node9] REPLY
+[Node6 <- Node9] REPLY
+[Node7 <- Node9] REPLY
+[Node8 <- Node9] REPLY
+[Node9] Requesting CS #4 with timestamp 76
+[Node9 -> Node1] REQUEST(ts=76)
+[Node9 -> Node2] REQUEST(ts=76)
+[Node9 -> Node3] REQUEST(ts=76)
+[Node9 -> Node4] REQUEST(ts=76)
+[Node1 <- Node9] REQUEST(ts=76)
+[Node1] Deferring REPLY to Node9
+[Node2 <- Node9] REQUEST(ts=76)
+[Node9 -> Node5] REQUEST(ts=76)
+[Node2] Deferring REPLY to Node9
+[Node9 -> Node6] REQUEST(ts=76)
+[Node9 -> Node7] REQUEST(ts=76)
+[Node4 <- Node9] REQUEST(ts=76)
+[Node3 <- Node9] REQUEST(ts=76)
+[Node3] Deferring REPLY to Node9
+[Node5 <- Node9] REQUEST(ts=76)
+[Node5] Deferring REPLY to Node9
+[Node7 <- Node9] REQUEST(ts=76)
+[Node4] Deferring REPLY to Node9
+[Node7] Deferring REPLY to Node9
+[Node6 <- Node9] REQUEST(ts=76)
+[Node9 -> Node8] REQUEST(ts=76)
+[Node6] Deferring REPLY to Node9
+[Node9 -> Node10] REQUEST(ts=76)
+[Node8 <- Node9] REQUEST(ts=76)
+[Node8] Deferring REPLY to Node9
+[Node10 <- Node9] REQUEST(ts=76)
+[Node10] Deferring REPLY to Node9
+[Node10] === CRITICAL SECTION #3 END ===
+[Node10 -> Node1] REPLY (deferred)
+[Node10 -> Node2] REPLY (deferred)
+[Node10 -> Node3] REPLY (deferred)
+[Node1 <- Node10] REPLY
+[Node10 -> Node4] REPLY (deferred)
+[Node10 -> Node5] REPLY (deferred)
+[Node1] Received all 9 replies
+[Node10 -> Node6] REPLY (deferred)
+[Node2 <- Node10] REPLY
+[Node10 -> Node7] REPLY (deferred)
+[Node3 <- Node10] REPLY
+[Node10 -> Node8] REPLY (deferred)
+[Node1] === CRITICAL SECTION #3 START ===
+[Node4 <- Node10] REPLY
+[Node10 -> Node9] REPLY (deferred)
+[Node10] Completed CS 3/5
+[Node5 <- Node10] REPLY
+[Node6 <- Node10] REPLY
+[Node7 <- Node10] REPLY
+[Node8 <- Node10] REPLY
+[Node9 <- Node10] REPLY
+[Node10] Requesting CS #4 with timestamp 78
+[Node10 -> Node1] REQUEST(ts=78)
+[Node10 -> Node2] REQUEST(ts=78)
+[Node10 -> Node3] REQUEST(ts=78)
+[Node10 -> Node4] REQUEST(ts=78)
+[Node10 -> Node5] REQUEST(ts=78)
+[Node1 <- Node10] REQUEST(ts=78)
+[Node10 -> Node6] REQUEST(ts=78)
+[Node10 -> Node7] REQUEST(ts=78)
+[Node10 -> Node8] REQUEST(ts=78)
+[Node2 <- Node10] REQUEST(ts=78)
+[Node1] Deferring REPLY to Node10
+[Node3 <- Node10] REQUEST(ts=78)
+[Node2] Deferring REPLY to Node10
+[Node3] Deferring REPLY to Node10
+[Node4 <- Node10] REQUEST(ts=78)
+[Node6 <- Node10] REQUEST(ts=78)
+[Node10 -> Node9] REQUEST(ts=78)
+[Node6] Deferring REPLY to Node10
+[Node5 <- Node10] REQUEST(ts=78)
+[Node7 <- Node10] REQUEST(ts=78)
+[Node8 <- Node10] REQUEST(ts=78)
+[Node5] Deferring REPLY to Node10
+[Node7] Deferring REPLY to Node10
+[Node4] Deferring REPLY to Node10
+[Node9 <- Node10] REQUEST(ts=78)
+[Node8] Deferring REPLY to Node10
+[Node9] Deferring REPLY to Node10
+[Node1] === CRITICAL SECTION #3 END ===
+[Node1 -> Node2] REPLY (deferred)
+[Node1 -> Node3] REPLY (deferred)
+[Node1 -> Node4] REPLY (deferred)
+[Node1 -> Node5] REPLY (deferred)
+[Node1 -> Node6] REPLY (deferred)
+[Node2 <- Node1] REPLY
+[Node1 -> Node7] REPLY (deferred)
+[Node1 -> Node8] REPLY (deferred)
+[Node4 <- Node1] REPLY
+[Node1 -> Node9] REPLY (deferred)
+[Node1 -> Node10] REPLY (deferred)
+[Node1] Completed CS 3/5
+[Node5 <- Node1] REPLY
+[Node3 <- Node1] REPLY
+[Node2] Received all 9 replies
+[Node6 <- Node1] REPLY
+[Node7 <- Node1] REPLY
+[Node8 <- Node1] REPLY
+[Node9 <- Node1] REPLY
+[Node2] === CRITICAL SECTION #3 START ===
+[Node10 <- Node1] REPLY
+[Node1] Requesting CS #4 with timestamp 80
+[Node1 -> Node2] REQUEST(ts=80)
+[Node1 -> Node3] REQUEST(ts=80)
+[Node1 -> Node4] REQUEST(ts=80)
+[Node2 <- Node1] REQUEST(ts=80)
+[Node1 -> Node5] REQUEST(ts=80)
+[Node2] Deferring REPLY to Node1
+[Node1 -> Node6] REQUEST(ts=80)
+[Node3 <- Node1] REQUEST(ts=80)
+[Node1 -> Node7] REQUEST(ts=80)
+[Node3] Deferring REPLY to Node1
+[Node1 -> Node8] REQUEST(ts=80)
+[Node1 -> Node9] REQUEST(ts=80)
+[Node4 <- Node1] REQUEST(ts=80)
+[Node1 -> Node10] REQUEST(ts=80)
+[Node5 <- Node1] REQUEST(ts=80)
+[Node5] Deferring REPLY to Node1
+[Node6 <- Node1] REQUEST(ts=80)
+[Node8 <- Node1] REQUEST(ts=80)
+[Node10 <- Node1] REQUEST(ts=80)
+[Node9 <- Node1] REQUEST(ts=80)
+[Node10] Deferring REPLY to Node1
+[Node4] Deferring REPLY to Node1
+[Node6] Deferring REPLY to Node1
+[Node9] Deferring REPLY to Node1
+[Node8] Deferring REPLY to Node1
+[Node7 <- Node1] REQUEST(ts=80)
+[Node7] Deferring REPLY to Node1
+[Node2] === CRITICAL SECTION #3 END ===
+[Node2 -> Node3] REPLY (deferred)
+[Node2 -> Node4] REPLY (deferred)
+[Node2 -> Node5] REPLY (deferred)
+[Node2 -> Node6] REPLY (deferred)
+[Node3 <- Node2] REPLY
+[Node4 <- Node2] REPLY
+[Node3] Received all 9 replies
+[Node3] === CRITICAL SECTION #4 START ===
+[Node2 -> Node7] REPLY (deferred)
+[Node5 <- Node2] REPLY
+[Node7 <- Node2] REPLY
+[Node6 <- Node2] REPLY
+[Node2 -> Node8] REPLY (deferred)
+[Node2 -> Node9] REPLY (deferred)
+[Node2 -> Node10] REPLY (deferred)
+[Node2 -> Node1] REPLY (deferred)
+[Node2] Completed CS 3/5
+[Node8 <- Node2] REPLY
+[Node9 <- Node2] REPLY
+[Node10 <- Node2] REPLY
+[Node1 <- Node2] REPLY
+[Node2] Requesting CS #4 with timestamp 82
+[Node2 -> Node1] REQUEST(ts=82)
+[Node2 -> Node3] REQUEST(ts=82)
+[Node1 <- Node2] REQUEST(ts=82)
+[Node1] Deferring REPLY to Node2
+[Node2 -> Node4] REQUEST(ts=82)
+[Node2 -> Node5] REQUEST(ts=82)
+[Node2 -> Node6] REQUEST(ts=82)
+[Node2 -> Node7] REQUEST(ts=82)
+[Node3 <- Node2] REQUEST(ts=82)
+[Node2 -> Node8] REQUEST(ts=82)
+[Node2 -> Node9] REQUEST(ts=82)
+[Node3] Deferring REPLY to Node2
+[Node2 -> Node10] REQUEST(ts=82)
+[Node4 <- Node2] REQUEST(ts=82)
+[Node4] Deferring REPLY to Node2
+[Node7 <- Node2] REQUEST(ts=82)
+[Node5 <- Node2] REQUEST(ts=82)
+[Node7] Deferring REPLY to Node2
+[Node5] Deferring REPLY to Node2
+[Node6 <- Node2] REQUEST(ts=82)
+[Node6] Deferring REPLY to Node2
+[Node8 <- Node2] REQUEST(ts=82)
+[Node8] Deferring REPLY to Node2
+[Node9 <- Node2] REQUEST(ts=82)
+[Node9] Deferring REPLY to Node2
+[Node10 <- Node2] REQUEST(ts=82)
+[Node10] Deferring REPLY to Node2
+[Node3] === CRITICAL SECTION #4 END ===
+[Node3 -> Node4] REPLY (deferred)
+[Node3 -> Node5] REPLY (deferred)
+[Node3 -> Node6] REPLY (deferred)
+[Node3 -> Node7] REPLY (deferred)
+[Node4 <- Node3] REPLY
+[Node6 <- Node3] REPLY
+[Node7 <- Node3] REPLY
+[Node8 <- Node3] REPLY
+[Node3 -> Node8] REPLY (deferred)
+[Node5 <- Node3] REPLY
+[Node3 -> Node9] REPLY (deferred)
+[Node3 -> Node10] REPLY (deferred)
+[Node3 -> Node1] REPLY (deferred)
+[Node3 -> Node2] REPLY (deferred)
+[Node3] Completed CS 4/5
+[Node4] Received all 9 replies
+[Node4] === CRITICAL SECTION #4 START ===
+[Node9 <- Node3] REPLY
+[Node10 <- Node3] REPLY
+[Node1 <- Node3] REPLY
+[Node2 <- Node3] REPLY
+[Node3] Requesting CS #5 with timestamp 84
+[Node3 -> Node1] REQUEST(ts=84)
+[Node3 -> Node2] REQUEST(ts=84)
+[Node3 -> Node4] REQUEST(ts=84)
+[Node3 -> Node5] REQUEST(ts=84)
+[Node3 -> Node6] REQUEST(ts=84)
+[Node3 -> Node7] REQUEST(ts=84)
+[Node3 -> Node8] REQUEST(ts=84)
+[Node1 <- Node3] REQUEST(ts=84)
+[Node1] Deferring REPLY to Node3
+[Node2 <- Node3] REQUEST(ts=84)
+[Node4 <- Node3] REQUEST(ts=84)
+[Node2] Deferring REPLY to Node3
+[Node3 -> Node9] REQUEST(ts=84)
+[Node4] Deferring REPLY to Node3
+[Node3 -> Node10] REQUEST(ts=84)
+[Node7 <- Node3] REQUEST(ts=84)
+[Node7] Deferring REPLY to Node3
+[Node8 <- Node3] REQUEST(ts=84)
+[Node5 <- Node3] REQUEST(ts=84)
+[Node8] Deferring REPLY to Node3
+[Node5] Deferring REPLY to Node3
+[Node9 <- Node3] REQUEST(ts=84)
+[Node9] Deferring REPLY to Node3
+[Node6 <- Node3] REQUEST(ts=84)
+[Node6] Deferring REPLY to Node3
+[Node10 <- Node3] REQUEST(ts=84)
+[Node10] Deferring REPLY to Node3
+[Node4] === CRITICAL SECTION #4 END ===
+[Node4 -> Node5] REPLY (deferred)
+[Node4 -> Node6] REPLY (deferred)
+[Node4 -> Node7] REPLY (deferred)
+[Node4 -> Node8] REPLY (deferred)
+[Node4 -> Node9] REPLY (deferred)
+[Node4 -> Node10] REPLY (deferred)
+[Node4 -> Node1] REPLY (deferred)
+[Node6 <- Node4] REPLY
+[Node7 <- Node4] REPLY
+[Node5 <- Node4] REPLY
+[Node8 <- Node4] REPLY
+[Node4 -> Node2] REPLY (deferred)
+[Node9 <- Node4] REPLY
+[Node4 -> Node3] REPLY (deferred)
+[Node4] Completed CS 4/5
+[Node5] Received all 9 replies
+[Node10 <- Node4] REPLY
+[Node5] === CRITICAL SECTION #4 START ===
+[Node1 <- Node4] REPLY
+[Node2 <- Node4] REPLY
+[Node3 <- Node4] REPLY
+[Node4] Requesting CS #5 with timestamp 86
+[Node4 -> Node1] REQUEST(ts=86)
+[Node4 -> Node2] REQUEST(ts=86)
+[Node4 -> Node3] REQUEST(ts=86)
+[Node4 -> Node5] REQUEST(ts=86)
+[Node4 -> Node6] REQUEST(ts=86)
+[Node4 -> Node7] REQUEST(ts=86)
+[Node4 -> Node8] REQUEST(ts=86)
+[Node1 <- Node4] REQUEST(ts=86)
+[Node2 <- Node4] REQUEST(ts=86)
+[Node1] Deferring REPLY to Node4
+[Node3 <- Node4] REQUEST(ts=86)
+[Node2] Deferring REPLY to Node4
+[Node3] Deferring REPLY to Node4
+[Node5 <- Node4] REQUEST(ts=86)
+[Node5] Deferring REPLY to Node4
+[Node6 <- Node4] REQUEST(ts=86)
+[Node4 -> Node9] REQUEST(ts=86)
+[Node6] Deferring REPLY to Node4
+[Node4 -> Node10] REQUEST(ts=86)
+[Node7 <- Node4] REQUEST(ts=86)
+[Node8 <- Node4] REQUEST(ts=86)
+[Node7] Deferring REPLY to Node4
+[Node8] Deferring REPLY to Node4
+[Node9 <- Node4] REQUEST(ts=86)
+[Node9] Deferring REPLY to Node4
+[Node10 <- Node4] REQUEST(ts=86)
+[Node10] Deferring REPLY to Node4
+[Node5] === CRITICAL SECTION #4 END ===
+[Node5 -> Node6] REPLY (deferred)
+[Node5 -> Node7] REPLY (deferred)
+[Node5 -> Node8] REPLY (deferred)
+[Node5 -> Node9] REPLY (deferred)
+[Node5 -> Node10] REPLY (deferred)
+[Node6 <- Node5] REPLY
+[Node5 -> Node1] REPLY (deferred)
+[Node5 -> Node2] REPLY (deferred)
+[Node8 <- Node5] REPLY
+[Node6] Received all 9 replies
+[Node5 -> Node3] REPLY (deferred)
+[Node6] === CRITICAL SECTION #4 START ===
+[Node9 <- Node5] REPLY
+[Node5 -> Node4] REPLY (deferred)
+[Node5] Completed CS 4/5
+[Node7 <- Node5] REPLY
+[Node10 <- Node5] REPLY
+[Node2 <- Node5] REPLY
+[Node1 <- Node5] REPLY
+[Node3 <- Node5] REPLY
+[Node4 <- Node5] REPLY
+[Node5] Requesting CS #5 with timestamp 88
+[Node5 -> Node1] REQUEST(ts=88)
+[Node5 -> Node2] REQUEST(ts=88)
+[Node5 -> Node3] REQUEST(ts=88)
+[Node5 -> Node4] REQUEST(ts=88)
+[Node1 <- Node5] REQUEST(ts=88)
+[Node2 <- Node5] REQUEST(ts=88)
+[Node5 -> Node6] REQUEST(ts=88)
+[Node2] Deferring REPLY to Node5
+[Node4 <- Node5] REQUEST(ts=88)
+[Node5 -> Node7] REQUEST(ts=88)
+[Node5 -> Node8] REQUEST(ts=88)
+[Node3 <- Node5] REQUEST(ts=88)
+[Node4] Deferring REPLY to Node5
+[Node5 -> Node9] REQUEST(ts=88)
+[Node3] Deferring REPLY to Node5
+[Node1] Deferring REPLY to Node5
+[Node6 <- Node5] REQUEST(ts=88)
+[Node6] Deferring REPLY to Node5
+[Node7 <- Node5] REQUEST(ts=88)
+[Node7] Deferring REPLY to Node5
+[Node5 -> Node10] REQUEST(ts=88)
+[Node8 <- Node5] REQUEST(ts=88)
+[Node9 <- Node5] REQUEST(ts=88)
+[Node9] Deferring REPLY to Node5
+[Node8] Deferring REPLY to Node5
+[Node10 <- Node5] REQUEST(ts=88)
+[Node10] Deferring REPLY to Node5
+[Node6] === CRITICAL SECTION #4 END ===
+[Node6 -> Node7] REPLY (deferred)
+[Node6 -> Node8] REPLY (deferred)
+[Node6 -> Node9] REPLY (deferred)
+[Node6 -> Node10] REPLY (deferred)
+[Node7 <- Node6] REPLY
+[Node6 -> Node1] REPLY (deferred)
+[Node8 <- Node6] REPLY
+[Node6 -> Node2] REPLY (deferred)
+[Node9 <- Node6] REPLY
+[Node6 -> Node3] REPLY (deferred)
+[Node6 -> Node4] REPLY (deferred)
+[Node6 -> Node5] REPLY (deferred)
+[Node6] Completed CS 4/5
+[Node10 <- Node6] REPLY
+[Node1 <- Node6] REPLY
+[Node7] Received all 9 replies
+[Node7] === CRITICAL SECTION #4 START ===
+[Node2 <- Node6] REPLY
+[Node3 <- Node6] REPLY
+[Node4 <- Node6] REPLY
+[Node5 <- Node6] REPLY
+[Node6] Requesting CS #5 with timestamp 90
+[Node6 -> Node1] REQUEST(ts=90)
+[Node6 -> Node2] REQUEST(ts=90)
+[Node6 -> Node3] REQUEST(ts=90)
+[Node6 -> Node4] REQUEST(ts=90)
+[Node6 -> Node5] REQUEST(ts=90)
+[Node6 -> Node7] REQUEST(ts=90)
+[Node6 -> Node8] REQUEST(ts=90)
+[Node6 -> Node9] REQUEST(ts=90)
+[Node6 -> Node10] REQUEST(ts=90)
+[Node2 <- Node6] REQUEST(ts=90)
+[Node1 <- Node6] REQUEST(ts=90)
+[Node1] Deferring REPLY to Node6
+[Node2] Deferring REPLY to Node6
+[Node4 <- Node6] REQUEST(ts=90)
+[Node3 <- Node6] REQUEST(ts=90)
+[Node3] Deferring REPLY to Node6
+[Node8 <- Node6] REQUEST(ts=90)
+[Node5 <- Node6] REQUEST(ts=90)
+[Node8] Deferring REPLY to Node6
+[Node7 <- Node6] REQUEST(ts=90)
+[Node5] Deferring REPLY to Node6
+[Node9 <- Node6] REQUEST(ts=90)
+[Node4] Deferring REPLY to Node6
+[Node7] Deferring REPLY to Node6
+[Node10 <- Node6] REQUEST(ts=90)
+[Node9] Deferring REPLY to Node6
+[Node10] Deferring REPLY to Node6
+[Node7] === CRITICAL SECTION #4 END ===
+[Node7 -> Node8] REPLY (deferred)
+[Node7 -> Node9] REPLY (deferred)
+[Node7 -> Node10] REPLY (deferred)
+[Node7 -> Node1] REPLY (deferred)
+[Node7 -> Node2] REPLY (deferred)
+[Node7 -> Node3] REPLY (deferred)
+[Node9 <- Node7] REPLY
+[Node8 <- Node7] REPLY
+[Node7 -> Node4] REPLY (deferred)
+[Node10 <- Node7] REPLY
+[Node7 -> Node5] REPLY (deferred)
+[Node7 -> Node6] REPLY (deferred)
+[Node7] Completed CS 4/5
+[Node1 <- Node7] REPLY
+[Node2 <- Node7] REPLY
+[Node3 <- Node7] REPLY
+[Node8] Received all 9 replies
+[Node8] === CRITICAL SECTION #4 START ===
+[Node4 <- Node7] REPLY
+[Node5 <- Node7] REPLY
+[Node6 <- Node7] REPLY
+[Node7] Requesting CS #5 with timestamp 92
+[Node7 -> Node1] REQUEST(ts=92)
+[Node7 -> Node2] REQUEST(ts=92)
+[Node7 -> Node3] REQUEST(ts=92)
+[Node7 -> Node4] REQUEST(ts=92)
+[Node7 -> Node5] REQUEST(ts=92)
+[Node7 -> Node6] REQUEST(ts=92)
+[Node2 <- Node7] REQUEST(ts=92)
+[Node7 -> Node8] REQUEST(ts=92)
+[Node3 <- Node7] REQUEST(ts=92)
+[Node2] Deferring REPLY to Node7
+[Node3] Deferring REPLY to Node7
+[Node5 <- Node7] REQUEST(ts=92)
+[Node1 <- Node7] REQUEST(ts=92)
+[Node4 <- Node7] REQUEST(ts=92)
+[Node5] Deferring REPLY to Node7
+[Node7 -> Node9] REQUEST(ts=92)
+[Node1] Deferring REPLY to Node7
+[Node8 <- Node7] REQUEST(ts=92)
+[Node9 <- Node7] REQUEST(ts=92)
+[Node4] Deferring REPLY to Node7
+[Node6 <- Node7] REQUEST(ts=92)
+[Node8] Deferring REPLY to Node7
+[Node7 -> Node10] REQUEST(ts=92)
+[Node9] Deferring REPLY to Node7
+[Node6] Deferring REPLY to Node7
+[Node10 <- Node7] REQUEST(ts=92)
+[Node10] Deferring REPLY to Node7
+[Node8] === CRITICAL SECTION #4 END ===
+[Node8 -> Node9] REPLY (deferred)
+[Node8 -> Node10] REPLY (deferred)
+[Node8 -> Node1] REPLY (deferred)
+[Node8 -> Node2] REPLY (deferred)
+[Node8 -> Node3] REPLY (deferred)
+[Node10 <- Node8] REPLY
+[Node9 <- Node8] REPLY
+[Node8 -> Node4] REPLY (deferred)
+[Node1 <- Node8] REPLY
+[Node2 <- Node8] REPLY
+[Node9] Received all 9 replies
+[Node8 -> Node5] REPLY (deferred)
+[Node3 <- Node8] REPLY
+[Node9] === CRITICAL SECTION #4 START ===
+[Node4 <- Node8] REPLY
+[Node8 -> Node6] REPLY (deferred)
+[Node8 -> Node7] REPLY (deferred)
+[Node5 <- Node8] REPLY
+[Node6 <- Node8] REPLY
+[Node8] Completed CS 4/5
+[Node7 <- Node8] REPLY
+[Node8] Requesting CS #5 with timestamp 94
+[Node8 -> Node1] REQUEST(ts=94)
+[Node8 -> Node2] REQUEST(ts=94)
+[Node8 -> Node3] REQUEST(ts=94)
+[Node8 -> Node4] REQUEST(ts=94)
+[Node8 -> Node5] REQUEST(ts=94)
+[Node8 -> Node6] REQUEST(ts=94)
+[Node8 -> Node7] REQUEST(ts=94)
+[Node8 -> Node9] REQUEST(ts=94)
+[Node8 -> Node10] REQUEST(ts=94)
+[Node2 <- Node8] REQUEST(ts=94)
+[Node2] Deferring REPLY to Node8
+[Node1 <- Node8] REQUEST(ts=94)
+[Node1] Deferring REPLY to Node8
+[Node7 <- Node8] REQUEST(ts=94)
+[Node5 <- Node8] REQUEST(ts=94)
+[Node3 <- Node8] REQUEST(ts=94)
+[Node9 <- Node8] REQUEST(ts=94)
+[Node10 <- Node8] REQUEST(ts=94)
+[Node3] Deferring REPLY to Node8
+[Node6 <- Node8] REQUEST(ts=94)
+[Node7] Deferring REPLY to Node8
+[Node5] Deferring REPLY to Node8
+[Node4 <- Node8] REQUEST(ts=94)
+[Node9] Deferring REPLY to Node8
+[Node10] Deferring REPLY to Node8
+[Node6] Deferring REPLY to Node8
+[Node4] Deferring REPLY to Node8
+[Node9] === CRITICAL SECTION #4 END ===
+[Node9 -> Node10] REPLY (deferred)
+[Node9 -> Node1] REPLY (deferred)
+[Node9 -> Node2] REPLY (deferred)
+[Node9 -> Node3] REPLY (deferred)
+[Node9 -> Node4] REPLY (deferred)
+[Node9 -> Node5] REPLY (deferred)
+[Node9 -> Node6] REPLY (deferred)
+[Node10 <- Node9] REPLY
+[Node9 -> Node7] REPLY (deferred)
+[Node9 -> Node8] REPLY (deferred)
+[Node9] Completed CS 4/5
+[Node2 <- Node9] REPLY
+[Node1 <- Node9] REPLY
+[Node10] Received all 9 replies
+[Node10] === CRITICAL SECTION #4 START ===
+[Node3 <- Node9] REPLY
+[Node5 <- Node9] REPLY
+[Node4 <- Node9] REPLY
+[Node6 <- Node9] REPLY
+[Node7 <- Node9] REPLY
+[Node8 <- Node9] REPLY
+[Node9] Requesting CS #5 with timestamp 96
+[Node9 -> Node1] REQUEST(ts=96)
+[Node9 -> Node2] REQUEST(ts=96)
+[Node9 -> Node3] REQUEST(ts=96)
+[Node9 -> Node4] REQUEST(ts=96)
+[Node9 -> Node5] REQUEST(ts=96)
+[Node9 -> Node6] REQUEST(ts=96)
+[Node9 -> Node7] REQUEST(ts=96)
+[Node9 -> Node8] REQUEST(ts=96)
+[Node9 -> Node10] REQUEST(ts=96)
+[Node2 <- Node9] REQUEST(ts=96)
+[Node1 <- Node9] REQUEST(ts=96)
+[Node2] Deferring REPLY to Node9
+[Node1] Deferring REPLY to Node9
+[Node3 <- Node9] REQUEST(ts=96)
+[Node5 <- Node9] REQUEST(ts=96)
+[Node4 <- Node9] REQUEST(ts=96)
+[Node6 <- Node9] REQUEST(ts=96)
+[Node3] Deferring REPLY to Node9
+[Node7 <- Node9] REQUEST(ts=96)
+[Node5] Deferring REPLY to Node9
+[Node10 <- Node9] REQUEST(ts=96)
+[Node6] Deferring REPLY to Node9
+[Node8 <- Node9] REQUEST(ts=96)
+[Node4] Deferring REPLY to Node9
+[Node7] Deferring REPLY to Node9
+[Node10] Deferring REPLY to Node9
+[Node8] Deferring REPLY to Node9
+[Node10] === CRITICAL SECTION #4 END ===
+[Node10 -> Node1] REPLY (deferred)
+[Node10 -> Node2] REPLY (deferred)
+[Node10 -> Node3] REPLY (deferred)
+[Node10 -> Node4] REPLY (deferred)
+[Node10 -> Node5] REPLY (deferred)
+[Node10 -> Node6] REPLY (deferred)
+[Node1 <- Node10] REPLY
+[Node10 -> Node7] REPLY (deferred)
+[Node2 <- Node10] REPLY
+[Node3 <- Node10] REPLY
+[Node10 -> Node8] REPLY (deferred)
+[Node10 -> Node9] REPLY (deferred)
+[Node10] Completed CS 4/5
+[Node4 <- Node10] REPLY
+[Node1] Received all 9 replies
+[Node5 <- Node10] REPLY
+[Node6 <- Node10] REPLY
+[Node8 <- Node10] REPLY
+[Node7 <- Node10] REPLY
+[Node1] === CRITICAL SECTION #4 START ===
+[Node9 <- Node10] REPLY
+[Node10] Requesting CS #5 with timestamp 98
+[Node10 -> Node1] REQUEST(ts=98)
+[Node10 -> Node2] REQUEST(ts=98)
+[Node10 -> Node3] REQUEST(ts=98)
+[Node10 -> Node4] REQUEST(ts=98)
+[Node10 -> Node5] REQUEST(ts=98)
+[Node10 -> Node6] REQUEST(ts=98)
+[Node10 -> Node7] REQUEST(ts=98)
+[Node2 <- Node10] REQUEST(ts=98)
+[Node2] Deferring REPLY to Node10
+[Node1 <- Node10] REQUEST(ts=98)
+[Node1] Deferring REPLY to Node10
+[Node5 <- Node10] REQUEST(ts=98)
+[Node4 <- Node10] REQUEST(ts=98)
+[Node5] Deferring REPLY to Node10
+[Node4] Deferring REPLY to Node10
+[Node6 <- Node10] REQUEST(ts=98)
+[Node6] Deferring REPLY to Node10
+[Node3 <- Node10] REQUEST(ts=98)
+[Node10 -> Node8] REQUEST(ts=98)
+[Node7 <- Node10] REQUEST(ts=98)
+[Node3] Deferring REPLY to Node10
+[Node7] Deferring REPLY to Node10
+[Node10 -> Node9] REQUEST(ts=98)
+[Node8 <- Node10] REQUEST(ts=98)
+[Node8] Deferring REPLY to Node10
+[Node9 <- Node10] REQUEST(ts=98)
+[Node9] Deferring REPLY to Node10
+[Node1] === CRITICAL SECTION #4 END ===
+[Node1 -> Node2] REPLY (deferred)
+[Node1 -> Node3] REPLY (deferred)
+[Node1 -> Node4] REPLY (deferred)
+[Node1 -> Node5] REPLY (deferred)
+[Node1 -> Node6] REPLY (deferred)
+[Node1 -> Node7] REPLY (deferred)
+[Node2 <- Node1] REPLY
+[Node1 -> Node8] REPLY (deferred)
+[Node4 <- Node1] REPLY
+[Node1 -> Node9] REPLY (deferred)
+[Node3 <- Node1] REPLY
+[Node1 -> Node10] REPLY (deferred)
+[Node1] Completed CS 4/5
+[Node2] Received all 9 replies
+[Node2] === CRITICAL SECTION #4 START ===
+[Node6 <- Node1] REPLY
+[Node7 <- Node1] REPLY
+[Node5 <- Node1] REPLY
+[Node9 <- Node1] REPLY
+[Node8 <- Node1] REPLY
+[Node10 <- Node1] REPLY
+[Node1] Requesting CS #5 with timestamp 100
+[Node1 -> Node2] REQUEST(ts=100)
+[Node1 -> Node3] REQUEST(ts=100)
+[Node1 -> Node4] REQUEST(ts=100)
+[Node1 -> Node5] REQUEST(ts=100)
+[Node1 -> Node6] REQUEST(ts=100)
+[Node1 -> Node7] REQUEST(ts=100)
+[Node1 -> Node8] REQUEST(ts=100)
+[Node2 <- Node1] REQUEST(ts=100)
+[Node1 -> Node9] REQUEST(ts=100)
+[Node2] Deferring REPLY to Node1
+[Node1 -> Node10] REQUEST(ts=100)
+[Node4 <- Node1] REQUEST(ts=100)
+[Node4] Deferring REPLY to Node1
+[Node5 <- Node1] REQUEST(ts=100)
+[Node6 <- Node1] REQUEST(ts=100)
+[Node5] Deferring REPLY to Node1
+[Node6] Deferring REPLY to Node1
+[Node3 <- Node1] REQUEST(ts=100)
+[Node7 <- Node1] REQUEST(ts=100)
+[Node3] Deferring REPLY to Node1
+[Node7] Deferring REPLY to Node1
+[Node8 <- Node1] REQUEST(ts=100)
+[Node8] Deferring REPLY to Node1
+[Node9 <- Node1] REQUEST(ts=100)
+[Node9] Deferring REPLY to Node1
+[Node10 <- Node1] REQUEST(ts=100)
+[Node10] Deferring REPLY to Node1
+[Node2] === CRITICAL SECTION #4 END ===
+[Node2 -> Node3] REPLY (deferred)
+[Node2 -> Node4] REPLY (deferred)
+[Node2 -> Node5] REPLY (deferred)
+[Node2 -> Node6] REPLY (deferred)
+[Node3 <- Node2] REPLY
+[Node2 -> Node7] REPLY (deferred)
+[Node2 -> Node8] REPLY (deferred)
+[Node3] Received all 9 replies
+[Node3] === CRITICAL SECTION #5 START ===
+[Node2 -> Node9] REPLY (deferred)
+[Node2 -> Node10] REPLY (deferred)
+[Node6 <- Node2] REPLY
+[Node2 -> Node1] REPLY (deferred)
+[Node2] Completed CS 4/5
+[Node4 <- Node2] REPLY
+[Node5 <- Node2] REPLY
+[Node8 <- Node2] REPLY
+[Node9 <- Node2] REPLY
+[Node7 <- Node2] REPLY
+[Node10 <- Node2] REPLY
+[Node1 <- Node2] REPLY
+[Node2] Requesting CS #5 with timestamp 102
+[Node2 -> Node1] REQUEST(ts=102)
+[Node2 -> Node3] REQUEST(ts=102)
+[Node2 -> Node4] REQUEST(ts=102)
+[Node2 -> Node5] REQUEST(ts=102)
+[Node2 -> Node6] REQUEST(ts=102)
+[Node2 -> Node7] REQUEST(ts=102)
+[Node2 -> Node8] REQUEST(ts=102)
+[Node1 <- Node2] REQUEST(ts=102)
+[Node3 <- Node2] REQUEST(ts=102)
+[Node4 <- Node2] REQUEST(ts=102)
+[Node1] Deferring REPLY to Node2
+[Node3] Deferring REPLY to Node2
+[Node4] Deferring REPLY to Node2
+[Node2 -> Node9] REQUEST(ts=102)
+[Node5 <- Node2] REQUEST(ts=102)
+[Node6 <- Node2] REQUEST(ts=102)
+[Node5] Deferring REPLY to Node2
+[Node6] Deferring REPLY to Node2
+[Node2 -> Node10] REQUEST(ts=102)
+[Node7 <- Node2] REQUEST(ts=102)
+[Node9 <- Node2] REQUEST(ts=102)
+[Node8 <- Node2] REQUEST(ts=102)
+[Node7] Deferring REPLY to Node2
+[Node9] Deferring REPLY to Node2
+[Node8] Deferring REPLY to Node2
+[Node10 <- Node2] REQUEST(ts=102)
+[Node10] Deferring REPLY to Node2
+[Node3] === CRITICAL SECTION #5 END ===
+[Node3 -> Node4] REPLY (deferred)
+[Node3 -> Node5] REPLY (deferred)
+[Node3 -> Node6] REPLY (deferred)
+[Node4 <- Node3] REPLY
+[Node3 -> Node7] REPLY (deferred)
+[Node3 -> Node8] REPLY (deferred)
+[Node3 -> Node9] REPLY (deferred)
+[Node4] Received all 9 replies
+[Node5 <- Node3] REPLY
+[Node3 -> Node10] REPLY (deferred)
+[Node6 <- Node3] REPLY
+[Node7 <- Node3] REPLY
+[Node9 <- Node3] REPLY
+[Node3 -> Node1] REPLY (deferred)
+[Node8 <- Node3] REPLY
+[Node10 <- Node3] REPLY
+[Node4] === CRITICAL SECTION #5 START ===
+[Node3 -> Node2] REPLY (deferred)
+[Node3] Completed CS 5/5
+[Node1 <- Node3] REPLY
+[Node2 <- Node3] REPLY
+
+[Node3] === EXPERIMENT COMPLETE ===
+[Node3] Requests Sent: 45
+[Node3] Requests Received: 45
+[Node3] Replies Sent: 45
+[Node3] Replies Received: 45
+[Node3] Total Messages: 180
+[Node4] === CRITICAL SECTION #5 END ===
+[Node4 -> Node5] REPLY (deferred)
+[Node4 -> Node6] REPLY (deferred)
+[Node4 -> Node7] REPLY (deferred)
+[Node5 <- Node4] REPLY
+[Node4 -> Node8] REPLY (deferred)
+[Node4 -> Node9] REPLY (deferred)
+[Node7 <- Node4] REPLY
+[Node6 <- Node4] REPLY
+[Node5] Received all 9 replies
+[Node5] === CRITICAL SECTION #5 START ===
+[Node8 <- Node4] REPLY
+[Node4 -> Node10] REPLY (deferred)
+[Node4 -> Node1] REPLY (deferred)
+[Node9 <- Node4] REPLY
+[Node4 -> Node2] REPLY (deferred)
+[Node4] Completed CS 5/5
+[Node10 <- Node4] REPLY
+[Node2 <- Node4] REPLY
+[Node1 <- Node4] REPLY
+
+[Node4] === EXPERIMENT COMPLETE ===
+[Node4] Requests Sent: 45
+[Node4] Requests Received: 45
+[Node4] Replies Sent: 45
+[Node4] Replies Received: 45
+[Node4] Total Messages: 180
+[Node5] === CRITICAL SECTION #5 END ===
+[Node5 -> Node6] REPLY (deferred)
+[Node5 -> Node7] REPLY (deferred)
+[Node5 -> Node8] REPLY (deferred)
+[Node5 -> Node9] REPLY (deferred)
+[Node5 -> Node10] REPLY (deferred)
+[Node5 -> Node1] REPLY (deferred)
+[Node6 <- Node5] REPLY
+[Node5 -> Node2] REPLY (deferred)
+[Node7 <- Node5] REPLY
+[Node6] Received all 9 replies
+[Node6] === CRITICAL SECTION #5 START ===
+[Node5] Completed CS 5/5
+[Node8 <- Node5] REPLY
+[Node9 <- Node5] REPLY
+[Node10 <- Node5] REPLY
+[Node1 <- Node5] REPLY
+[Node2 <- Node5] REPLY
+
+[Node5] === EXPERIMENT COMPLETE ===
+[Node5] Requests Sent: 45
+[Node5] Requests Received: 45
+[Node5] Replies Sent: 45
+[Node5] Replies Received: 45
+[Node5] Total Messages: 180
+[Node6] === CRITICAL SECTION #5 END ===
+[Node6 -> Node7] REPLY (deferred)
+[Node6 -> Node8] REPLY (deferred)
+[Node6 -> Node9] REPLY (deferred)
+[Node6 -> Node10] REPLY (deferred)
+[Node6 -> Node1] REPLY (deferred)
+[Node6 -> Node2] REPLY (deferred)
+[Node6] Completed CS 5/5
+[Node7 <- Node6] REPLY
+[Node8 <- Node6] REPLY
+[Node7] Received all 9 replies
+[Node7] === CRITICAL SECTION #5 START ===
+[Node9 <- Node6] REPLY
+[Node10 <- Node6] REPLY
+[Node2 <- Node6] REPLY
+[Node1 <- Node6] REPLY
+
+[Node6] === EXPERIMENT COMPLETE ===
+[Node6] Requests Sent: 45
+[Node6] Requests Received: 45
+[Node6] Replies Sent: 45
+[Node6] Replies Received: 45
+[Node6] Total Messages: 180
+[Node7] === CRITICAL SECTION #5 END ===
+[Node7 -> Node8] REPLY (deferred)
+[Node7 -> Node9] REPLY (deferred)
+[Node7 -> Node10] REPLY (deferred)
+[Node7 -> Node1] REPLY (deferred)
+[Node7 -> Node2] REPLY (deferred)
+[Node7] Completed CS 5/5
+[Node8 <- Node7] REPLY
+[Node9 <- Node7] REPLY
+[Node8] Received all 9 replies
+[Node8] === CRITICAL SECTION #5 START ===
+[Node10 <- Node7] REPLY
+[Node1 <- Node7] REPLY
+[Node2 <- Node7] REPLY
+
+[Node7] === EXPERIMENT COMPLETE ===
+[Node7] Requests Sent: 45
+[Node7] Requests Received: 45
+[Node7] Replies Sent: 45
+[Node7] Replies Received: 45
+[Node7] Total Messages: 180
+[Node8] === CRITICAL SECTION #5 END ===
+[Node8 -> Node9] REPLY (deferred)
+[Node8 -> Node10] REPLY (deferred)
+[Node8 -> Node1] REPLY (deferred)
+[Node8 -> Node2] REPLY (deferred)
+[Node8] Completed CS 5/5
+[Node9 <- Node8] REPLY
+[Node2 <- Node8] REPLY
+[Node10 <- Node8] REPLY
+[Node9] Received all 9 replies
+[Node1 <- Node8] REPLY
+[Node9] === CRITICAL SECTION #5 START ===
+
+[Node8] === EXPERIMENT COMPLETE ===
+[Node8] Requests Sent: 45
+[Node8] Requests Received: 45
+[Node8] Replies Sent: 45
+[Node8] Replies Received: 45
+[Node8] Total Messages: 180
+[Node9] === CRITICAL SECTION #5 END ===
+[Node9 -> Node10] REPLY (deferred)
+[Node9 -> Node1] REPLY (deferred)
+[Node10 <- Node9] REPLY
+[Node9 -> Node2] REPLY (deferred)
+[Node9] Completed CS 5/5
+[Node10] Received all 9 replies
+[Node10] === CRITICAL SECTION #5 START ===
+[Node1 <- Node9] REPLY
+[Node2 <- Node9] REPLY
+
+[Node9] === EXPERIMENT COMPLETE ===
+[Node9] Requests Sent: 45
+[Node9] Requests Received: 45
+[Node9] Replies Sent: 45
+[Node9] Replies Received: 45
+[Node9] Total Messages: 180
+[Node10] === CRITICAL SECTION #5 END ===
+[Node10 -> Node1] REPLY (deferred)
+[Node10 -> Node2] REPLY (deferred)
+[Node10] Completed CS 5/5
+[Node1 <- Node10] REPLY
+[Node2 <- Node10] REPLY
+[Node1] Received all 9 replies
+[Node1] === CRITICAL SECTION #5 START ===
+
+[Node10] === EXPERIMENT COMPLETE ===
+[Node10] Requests Sent: 45
+[Node10] Requests Received: 45
+[Node10] Replies Sent: 45
+[Node10] Replies Received: 45
+[Node10] Total Messages: 180
+[Node1] === CRITICAL SECTION #5 END ===
+[Node1 -> Node2] REPLY (deferred)
+[Node1] Completed CS 5/5
+[Node2 <- Node1] REPLY
+[Node2] Received all 9 replies
+[Node2] === CRITICAL SECTION #5 START ===
+
+[Node1] === EXPERIMENT COMPLETE ===
+[Node1] Requests Sent: 45
+[Node1] Requests Received: 45
+[Node1] Replies Sent: 45
+[Node1] Replies Received: 45
+[Node1] Total Messages: 180
+[Node2] === CRITICAL SECTION #5 END ===
+[Node2] Completed CS 5/5
+
+[Node2] === EXPERIMENT COMPLETE ===
+[Node2] Requests Sent: 45
+[Node2] Requests Received: 45
+[Node2] Replies Sent: 45
+[Node2] Replies Received: 45
+[Node2] Total Messages: 180
+All nodes completed!
+
+================================================
+   RICART-AGRAWALA MUTUAL EXCLUSION RESULTS
+================================================
+Number of Nodes: 10
+CS per Node: 5
+Total CS Executions: 50
+------------------------------------------------
+REQUEST Messages Sent: 450
+REQUEST Messages Received: 450
+REPLY Messages Sent: 450
+REPLY Messages Received: 450
+------------------------------------------------
+Total Messages Sent: 900
+Theoretical Messages per CS: 18 [2(N-1)]
+Actual Avg Messages per CS: 18.00
+------------------------------------------------
+Total Time: 6595 ms
+Avg Latency per CS: 769.80 ms
+================================================
+
+CSV_OUTPUT,10,900,18.00,769.80,18
